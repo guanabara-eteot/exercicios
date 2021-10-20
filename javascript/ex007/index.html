@@ -4,30 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 007</title>
+    <title>Exercício JavaScript</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: blueviolet;
+        }
+
+        main {
+            width: 500px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <main>
-        <h1>Textos, números e formulários</h1>
-        <form action="teste.php" method="get" onsubmit="return apresentar()">
-            <label for="nome">Qual é o seu nome?</label>
-            <input type="text" name="nome" id="nome" maxlength="25" placeholder="Digite seu primeiro nome">
-            <br><label for="idade">Quantos anos você tem?</label>
-            <input type="number" name="idade" id="idade" min="1" max="200" value="18">
-            <br><input type="submit" value="Verificar">
-        </form>
-        <p id="frase">Aqui vai aparecer o resultado...</p>
+        <section id="botoes">
+            <h1>Interaja com os botões</h1>
+            <button onclick="esconder()">Esconder</button>
+            <button onclick="exibir()">Exibir</button>
+        </section>
+        <section id="resultado">
+            <h2>Caixa Especial &#x1F440;</h2>
+        </section>
     </main>
     <script>
-        let frase = document.getElementById("frase")
-        frase.style.visibility = "hidden"
+        
+        let res = document.getElementById("resultado")
 
-        function apresentar() {
-            let nome = document.getElementById("nome").value
-            let idade = Number(document.getElementById("idade").value)
-            frase.style.visibility = "visible"
-            frase.innerHTML = `Olá, ${nome}! No seu próximo aniversário, você vai fazer ${idade+1} anos! &#x1F382;`
-            return false
+        function esconder() {
+            res.style.visibility = "hidden"
+        }
+
+        function exibir() {
+            res.style.visibility = "visible"
         }
     </script>
 </body>
