@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="formulario">
+            <h1>Controle de Aluno</h1>
+            <form action="salvar.php" method="get" onsubmit="return alunos()">
+                <label for="nome">Nome </label>
+                <input type="text" name="nome" id="nome">
+
+                <br><label for="n1">Nota 1 </label>
+                <input type="number" name="n1" id="n1" min="0" max="10" value="5" step="0.5">
+
+                <br><label for="n2">Nota 2 </label>
+                <input type="number" name="n2" id="n2" min="0" max="10" value="5" step="0.5">
+
+                <br><input type="submit" value="Calcular Média">
+            </form>
+        </section>
+        <section id="resultado">
+            <h2>Resultado</h2>
+            <p id="frase">Resultado...</p>
+            <button onclick="fechar()">Fechar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

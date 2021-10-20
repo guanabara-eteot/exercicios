@@ -14,4 +14,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex010/" target="_blank">010 - Data e Hora</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex011/" target="_blank">011 - Calculadora de idade</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex012/" target="_blank">012 - Calculadora de desconto</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex013/" target="_blank">013 - </a>
 * Continua...
