@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: slategray;
+    background-image: url("fumaca.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    max-width: 550px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}

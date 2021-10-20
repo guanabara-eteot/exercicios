@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Pare de fumar &#x1F6AD;</h1>
+            <p>Cigarro MATA! Segundo uma pesquisa, cada cigarro fumado reduz 10 min de vida de um ser humano. Vamos fazer a conta?</p>
+            <form action="salvar.php" method="get" onsubmit="return calcular()">
+                <label for="quant">Quantos cigarros fuma por dia? </label>
+                <input type="number" name="quant" id="quant" min="0" max="50" step="1" value="1">
+
+                <br><label for="anos">Fumante há quantos anos? </label>
+                <input type="number" name="anos" id="anos" min="0" max="50" step="1" value="1">
+
+                <br><input type="submit" value="Calcular">
+            </form>
+        </section>
+        <section id="saida">
+            <h2>Cálculo da Morte</h2>
+            <p id="frase">Resultado...</p>
+            <button onclick="fechar()">Fechar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
