@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: cornflowerblue;
+        }
+
+        main {
+            max-width: 550px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        section#resultado {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="formulario">
+            <h1>Identifique-se</h1>
+            <form action="salvar.php" method="get" onsubmit="return calcular()">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" maxlength="25" placeholder="Apenas o primeiro nome">
+                
+                <br><label for="nasc">Ano de Nascimento</label>
+                <input type="number" name="nasc" id="nasc" min="1900" max="2021" value="1990">
+
+                <br><input type="submit" value="Analisar">
+            </form>
+        </section>
+        <section id="resultado">
+            <h2>Resultado da análise</h2>
+            <p id="frase">Resultado...</p>
+            <button onclick="fechar()">Fechar</button>
+        </section>
+    </main>
+    <script>
+        let res = document.getElementById("resultado")
+        let frase = document.getElementById("frase")
+        
+        function fechar() {
+            res.style.visibility = "hidden"
+        }
+
+        function calcular() {
+            let calend = new Date()
+            let ano = calend.getFullYear()
+            let nome = document.getElementById("nome").value
+            let nasc = Number(document.getElementById("nasc").value)
+            let idade = ano - nasc
+            res.style.visibility = "visible"
+            frase.innerHTML = `${nome} nasceu em ${nasc}, e pelas minhas contas vai fazer <strong>${idade} anos</strong> até o fim de ${ano}.`
+            return false
+        }
+    </script>
+</body>
+</html>

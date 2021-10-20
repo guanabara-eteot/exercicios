@@ -12,4 +12,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex008/" target="_blank">008 - Primeiro formulário</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex009/" target="_blank">009 - Números em Formulários</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex010/" target="_blank">010 - Data e Hora</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex011/" target="_blank">011 - Calculadora de idade</a>
 * Continua...
