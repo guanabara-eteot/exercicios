@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Reajuste Salarial</h1>
+            <p>Uma empresa precisa de ajuda para calcular os novos salários dos seus funcionários, que receberão um aumento de 5%, 10% ou 20%.</p>
+            <form action="salvar.php" method="get" onsubmit="return reajustar()">
+                <label for="nome">Nome do Funcionário </label>
+                <input type="text" name="nome" id="nome">
+
+                <br><label for="sal">Salário R$</label>
+                <input type="number" name="sal" id="sal" min="1100" max="20000" value="1100" step="0.5">
+
+                <br><label for="reaj">Reajuste </label>
+                <select name="reaj" id="reaj">
+                    <option value="5">5% de aumento</option>
+                    <option value="10">10% de aumento</option>
+                    <option value="20">20% de aumento</option>
+                </select>
+
+                <br><input type="submit" value="Reajustar">
+            </form>
+        </section>
+        <section id="saida">
+            <h2>Novo salário do Funcionário</h2>
+            <p id="frase">Resultado...</p>
+            <button onclick="fechar()">Fechar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
