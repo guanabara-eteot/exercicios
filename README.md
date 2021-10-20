@@ -2,6 +2,7 @@
  Exercícios Resolvidos Completos
 
 ## Exercícios JavaScript
+### Estrutura Sequencial
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex001/" target="_blank">001 - Usando o alert()</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex002/" target="_blank">002 - Interagindo com botões</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex003/" target="_blank">003 - Usando o prompt()</a>
@@ -18,4 +19,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex014/" target="_blank">014 - Conversor R$ &#x21E2; US$</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex015/" target="_blank">015 - Cálculo para pintar parede</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex016/" target="_blank">016 - Aumentando os Salários</a>
+### Estrutura Condicional if
 * Continua...
