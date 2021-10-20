@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 006</title>
+</head>
+<body>
+    <main>
+        <h1>Textos e números</h1>
+        <button onclick="apresentar()">Aperte aqui</button>
+        <p id="frase">O resultado vai aparecer aqui...</p>
+    </main>
+    <script>
+        let frase = document.getElementById("frase")
+        function apresentar() {
+            let nome = prompt("Qual é seu nome?")
+            let idade = Number(prompt(`${nome}, quantos anos você tem hoje?`))
+            frase.innerHTML = `Olá, ${nome}! No seu próximo aniversário, você vai fazer ${idade+1} anos! &#x1F382;`
+        }
+    </script>
+</body>
+</html>
