@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: yellowgreen;
+        }
+
+        main {
+            width: 400px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="formulario">
+            <h1>Informe dois números</h1>
+            <form action="teste.php" method="get" onsubmit="return calcular()">
+                <label for="n1">Número 1: </label>
+                <input type="number" name="n1" id="n1" min="1" max="100" value="1">
+
+                <br><label for="n2">Número 2: </label>
+                <input type="number" name="n2" id="n2" min="1" max="100" value="1">
+
+                <br><input type="submit" value="Calcular">
+            </form>
+        </section>
+        <section id="resultado">
+            <h2>Analisando os números</h2>
+            <p id="frase">Resultado final</p>
+            <button onclick="fechar()">Fechar</button>
+        </section>
+    </main>
+    <script>
+        let res = document.getElementById("resultado")
+        let frase = document.getElementById("frase")
+        res.style.visibility = "hidden"
+
+        function fechar() {
+            res.style.visibility = "hidden"
+        }
+
+        function calcular() {
+            let n1 = Number(document.getElementById("n1").value)
+            let n2 = Number(document.getElementById("n2").value)
+            res.style.visibility = "visible"
+            frase.innerHTML = `Usuário informou os números ${n1} e ${n2}:<br>`
+            frase.innerHTML += `<br>${n1} + ${n2} = ${n1+n2}`
+            frase.innerHTML += `<br>${n1} - ${n2} = ${n1-n2}`
+            frase.innerHTML += `<br>${n1} × ${n2} = ${n1*n2}`
+            frase.innerHTML += `<br>${n1} ÷ ${n2} = ${n1/n2}`
+
+            return false
+        }
+    </script>
+</body>
+</html>

@@ -10,3 +10,4 @@
 * [006 - Misturando textos e números](https://guanabara-eteot.github.io/exercicios/javascript/ex006/)
 * [007 - Escondendo e exibindo elementos](https://guanabara-eteot.github.io/exercicios/javascript/ex007/)
 * [008 - Primeiro formulário](https://guanabara-eteot.github.io/exercicios/javascript/ex008/)
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex009/" target="_blank">009 - Números em Formulários</a>

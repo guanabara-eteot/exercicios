@@ -12,8 +12,6 @@
         <form action="teste.php" method="get" onsubmit="return apresentar()">
             <label for="nome">Qual é o seu nome?</label>
             <input type="text" name="nome" id="nome" maxlength="25" placeholder="Digite seu primeiro nome">
-            <br><label for="idade">Quantos anos você tem?</label>
-            <input type="number" name="idade" id="idade" min="1" max="200" value="18">
             <br><input type="submit" value="Verificar">
         </form>
         <p id="frase">Aqui vai aparecer o resultado...</p>
@@ -24,9 +22,8 @@
 
         function apresentar() {
             let nome = document.getElementById("nome").value
-            let idade = Number(document.getElementById("idade").value)
             frase.style.visibility = "visible"
-            frase.innerHTML = `Olá, <em>${nome}</em>! No seu próximo aniversário, você vai fazer <strong>${idade+1} anos</strong>! &#x1F382;`
+            frase.innerHTML = `Olá, <em>${nome}</em>! É um grande prazer te conhecer! &#x1F91D;`
             return false
         }
     </script>
