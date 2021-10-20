@@ -13,7 +13,7 @@ function calcdesconto() {
     let reduc = preco * desc / 100
     let novo = preco - reduc
 
-    frase.innerHTML = `O ${prod}, que custava R$${preco}, com ${desc}% de desconto vai baixar R$${reduc} e vai passar a custar R$${novo}.`
+    frase.innerHTML = `O ${prod}, que custava R$${preco.toFixed(2)}, com ${desc}% de desconto vai baixar R$${reduc} e vai passar a custar R$${novo.toFixed(2)}.`
 
     res.style.visibility = "visible"
     return false
