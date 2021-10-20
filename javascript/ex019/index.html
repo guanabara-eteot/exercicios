@@ -5,54 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício JavaScript</title>
-    <style>
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: slategrey;
-        }
-        
-        main {
-            max-width: 550px;
-            margin: auto;
-        }
-
-        section {
-            background-color: white;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 10px;
-        } 
-    </style>
 </head>
 <body>
     <main>
-        <section id="formulario">
-            <h1>Personalize seu site</h1>
-            <form action="salvar.php" method="get" onsubmit="return personalizar()">
-                <fieldset>
-                    <legend>Escolha uma cor</legend>
-                    <!-- Botões de radio não são identificados pelo seu id, e sim pelo seu name. Todos os botões de radio que fazem parte do mesmo grupo, devem ter o mesmo nome e id diferentes. -->
-                    <input type="radio" name="cor" id="azul" checked>
-                    <label for="azul">Azul</label>
-                    <br><input type="radio" name="cor" id="vermelho">
-                    <label for="vermelho">Vermelho</label>
-                </fieldset>
-                <input type="submit" value="Escolhido">
-            </form>
-        </section>
+        <h1>É par ou ímpar?</h1>
+        <p>Todo número par é divisível por 2 (resto 0), lembre-se disso.</p>
+
+        <form action="salvar.php" method="get" onsubmit="return parouimpar()">
+            <label for="num">Digite um número </label>
+            <input type="number" name="num" id="num" min="1" max="1000000" value="1">
+            <input type="submit" value="Verificar">
+        </form>
+
+        <p id="resposta">O número é par ou ímpar?</p>
     </main>
     <script>
-        let fundo = document.body
-        
-        function personalizar() {
-            let cor = document.getElementsByName("cor")
-            
-            if(cor[0].checked) {
-                fundo.style.backgroundColor = "blue"
-            } else {
-                fundo.style.backgroundColor = "red"
-            }
+        let resp = document.getElementById("resposta")
 
+        function parouimpar() {            
+            let num = Number(document.getElementById("num").value)
+
+            resp.innerHTML = `O número ${num} que foi digitado `
+            if (num % 2 == 0) {
+                resp.innerHTML += `É PAR!`
+            } else {
+                resp.innerHTML += `É ÍMPAR!`
+            }
+            
             return false
         }
     </script>
