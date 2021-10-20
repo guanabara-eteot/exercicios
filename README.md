@@ -19,5 +19,6 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex014/" target="_blank">014 - Conversor R$ &#x21E2; US$</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex015/" target="_blank">015 - Cálculo para pintar parede</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex016/" target="_blank">016 - Aumentando os Salários</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex017/" target="_blank">017 - Pare de Fumar!</a>
 ### Estrutura Condicional if
 * Continua...
