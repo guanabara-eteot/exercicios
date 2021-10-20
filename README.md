@@ -17,5 +17,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex013/" target="_blank">013 - Média do Aluno</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex014/" target="_blank">014 - Conversor R$ &#x21E2; US$</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex015/" target="_blank">015 - Cálculo para pintar parede</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex015/" target="_blank">016 - Reajuste Salarial</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex016/" target="_blank">016 - Reajuste Salarial</a>
 * Continua...
