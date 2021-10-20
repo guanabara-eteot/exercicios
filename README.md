@@ -11,4 +11,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex007/" target="_blank">007 - Escondendo e exibindo elementos</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex008/" target="_blank">008 - Primeiro formulário</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex009/" target="_blank">009 - Números em Formulários</a>
-* Em breve...
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex010/" target="_blank">010 - Data e Hora</a>
+* Continua...

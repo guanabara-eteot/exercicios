@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+</head>
+<body>
+    <main>
+        <h1>Data e Hora</h1>
+        <button onclick="analisar()">Aperte aqui</button>
+        <p id="frase">A data e hora do sistema vão aparecer...</p>
+    </main>
+    <script>
+        let frase = document.getElementById("frase")
+        function analisar() {
+            let calend = new Date()
+            frase.innerHTML = `Dia: ${calend.getDate()}`
+            frase.innerHTML += `<br>Mês: ${calend.getMonth()}`
+            frase.innerHTML += `<br>Ano: ${calend.getFullYear()}`
+            frase.innerHTML += `<br>Dia da Semana: ${calend.getDay()} (Domingo é 0)`
+            frase.innerHTML += `<br>Horas: ${calend.getHours()}`
+            frase.innerHTML += `<br>Minutos: ${calend.getMinutes()}`
+            frase.innerHTML += `<br>Segundos: ${calend.getSeconds()}`
+        }
+    </script>
+</body>
+</html>
