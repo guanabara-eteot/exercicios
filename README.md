@@ -20,5 +20,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex015/" target="_blank">015 - Cálculo para pintar parede</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex016/" target="_blank">016 - Aumentando os Salários</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex017/" target="_blank">017 - Pare de Fumar!</a>
-### Estrutura Condicional if
-* Continua...
+### Estrutura Condicional if (básico)
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex018/" target="_blank">018 - Vota ou não vota?</a>
