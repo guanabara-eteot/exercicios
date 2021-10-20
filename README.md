@@ -5,7 +5,6 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex001/" target="_blank">001 - Usando o alert()</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex002/" target="_blank">002 - Interagindo com botões</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex003/" target="_blank">003 - Usando o prompt()</a>
-* [003 - Usando o prompt()](https://guanabara-eteot.github.io/exercicios/javascript/ex003/)
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex004/" target="_blank">004 - Modificando conteúdo da página</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex005/" target="_blank">005 - Convertendo números</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex006/" target="_blank">006 - Misturando textos e números</a>
