@@ -14,10 +14,10 @@ function radar() {
     res.style.visibility = "visible"
     frase.innerHTML = `Velocidade identificada: <strong>${vel} Km/h</strong>`
     if (vel <= 50) {
-        frase.innerHTML += `<br>Status: <span class='normal'>DENTRO DOS LIMITES</span> (sem multas)`
+        frase.innerHTML += `<br>Status: <span class='normal'>DENTRO DOS LIMITES</span> &#x1F46E;(sem multas)`
         foto.src = "imagens/sem-multa.jpg"
     } else {
-        frase.innerHTML += `<br>Status: <span class='multado'>MULTADO POR EXCESSO DE VELOCIDADE</span>`
+        frase.innerHTML += `<br>Status: <span class='multado'>MULTADO POR EXCESSO DE VELOCIDADE</span> &#x1F6A8;`
         foto.src = "imagens/com-multa.jpg"
     }
 
