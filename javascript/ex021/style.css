@@ -14,9 +14,7 @@ body {
 
 main {
     max-width: 550px;
-    /* Propriedades para centralizar elementos verticalmente na tela */
-    margin: 50vh auto 0px auto;
-    transform: translateY(-50%);
+    margin: auto;
 }
 
 section {
@@ -24,6 +22,10 @@ section {
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+}
+
+img#foto {
+    width: 100%;
 }
 
 span.normal {
