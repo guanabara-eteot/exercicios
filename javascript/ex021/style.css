@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkslategray;
+    background-image: url("imagens/estrada.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    max-width: 550px;
+    /* Propriedades para centralizar elementos verticalmente na tela */
+    margin: 50vh auto 0px auto;
+    transform: translateY(-50%);
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+span.normal {
+    color: green;
+    font-weight: bolder;
+}
+
+span.multado {
+    color: red;
+    font-weight: bolder;
+}

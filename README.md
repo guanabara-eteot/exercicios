@@ -24,4 +24,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex018/" target="_blank">018 - Vota ou não vota?</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex019/" target="_blank">019 - Par ou Ímpar?</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex020/" target="_blank">020 - Site personalizado</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex021/" target="_blank">021 - Radar de Velocidade</a>
 * Continua...
