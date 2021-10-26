@@ -26,3 +26,6 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex020/" target="_blank">020 - Site personalizado</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex021/" target="_blank">021 - Radar de Velocidade</a>
 * Continua...
+
+### Estrutura Condicional if (múltipla)
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex025/" target="_blank">025 - Termômetro Automático</a>
