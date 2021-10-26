@@ -9,14 +9,10 @@
 </head>
 <body>
     <main>
-        <section id="formulario">
-            <h1>Termômetro</h1>
-            <form action="salvar.php" method="get">
-                <input type="range" name="temp" id="temp" min="0" max="100" value="30" oninput="mudatemp()"> <label for="temp" id="valor">30<sup>o</sup>C</label>
-            </form>
-            <br><img src="imagens/03-smiling.png" alt="Temperatura" id="emoji">
-        </section>
+        <h1 id="msg">Mensagem</h1>
+        <p id="frase">Hora atual</p>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>

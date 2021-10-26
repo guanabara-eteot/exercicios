@@ -1,17 +1,30 @@
-function mudatemp() {
-    let temp = Number(document.getElementById("temp").value)
-    let valor = document.getElementById("valor")
-    let foto = document.getElementById("emoji")
-    valor.innerHTML = `${temp}<sup>o</sup>C`
-    if (temp <= 10) {
-        foto.src = "imagens/01-ice.png"
-    } else if (temp <= 25) {
-        foto.src = "imagens/02-cold.png"
-    }  else if (temp <= 45) {
-        foto.src = "imagens/03-smiling.png"
-    }  else if (temp <= 80) {
-        foto.src = "imagens/04-hot.png"
-    }  else {
-        foto.src = "imagens/05-fire.png"
-    }
+let msg = document.getElementById("msg")
+let frase = document.getElementById("frase")
+
+let calend = new Date()
+let hora = calend.getHours()
+
+// Remova o comentário da linha abaixo para testar outros valores
+// hora = 11
+
+frase.innerHTML = `Agora são ${hora} horas`
+
+let corfundo = ""
+let corletra = ""
+if (hora >= 5 && hora < 12) {
+    msg.innerHTML = "Bom Dia &#x1F305;"
+    corfundo = "blue"
+    corletra = "yellow"
+} else if (hora >= 12 && hora < 19) {
+    msg.innerHTML = "Boa Tarde &#x1F307;"
+    corfundo = "orangered"
+    corletra = "yellow"
+} else if ((hora >= 19 && hora < 24) || (hora >= 0 && hora < 5)) {
+    msg.innerHTML = "Boa Noite &#x1F311;"
+    corfundo = "black"
+    corletra = "white"
 }
+
+document.body.style.backgroundColor = corfundo
+msg.style.color = corletra
+frase.style.color = corletra
