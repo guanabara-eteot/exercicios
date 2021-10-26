@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: crimson;
+        }
+
+        main {
+            max-width: 550px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Ano Bissexto</h1>
+            <p>Anos bissextos são aqueles que fazem parte do calendário Gregoriano (a partir de 1582) e possuem um dia a mais (o dia 29 de Fevereiro). As regras para descobrir se um ano é bissexto são:</p>
+            <ol>
+                <li>De 4 em 4 anos é ano bissexto</li>
+                <li>De 100 em 100 anos não é ano bissexto</li>
+                <li>De 400 em 400 anos é ano bissexto</li>
+                <li>Prevalecem as últimas regras sobre as primeiras</li>
+            </ol>
+
+            <p>Veja mais informações sobre <a href="https://pt.wikipedia.org/wiki/Ano_bissexto">Anos Bissextos</a>.</p>
+
+            <h2>Verifique se um ano é bissexto</h2>
+
+            <form action="salvar.php" method="get" onsubmit="return bissexto()">
+                <label for="ano">Ano </label>
+                <input type="number" name="ano" id="ano" min="1582" max="2021" value="2000">
+                <input type="submit" value="Verificar">
+            </form>
+        </section>
+        <section id="saida">
+            <h2>Resultado</h2>
+            <p id="frase">Resultado...</p>
+        </section>
+    </main>
+    <script>
+        let saida = document.getElementById("saida")
+        let frase = document.getElementById("frase")
+        saida.style.visibility = "hidden"
+
+        function bissexto() {
+            let ano = Number(document.getElementById("ano").value)
+            if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
+                frase.innerHTML = `O ano ${ano} <strong>é bissexto</strong>!`
+            } else {
+                frase.innerHTML = `O ano ${ano} <strong>NÃO é bissexto</strong>!`
+            }
+            saida.style.visibility = "visible"
+
+            return false
+        }
+    </script>
+</body>
+</html>
