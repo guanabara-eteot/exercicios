@@ -26,6 +26,7 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex020/" target="_blank">020 - Site personalizado</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex021/" target="_blank">021 - Radar de Velocidade</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex022/" target="_blank">022 - Ano Bissexto</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex024/" target="_blank">024 - Ano Bissexto</a>
 * Continua...
 
 ### Estrutura Condicional if (múltipla)
