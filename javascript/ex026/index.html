@@ -9,12 +9,28 @@
 </head>
 <body>
     <main>
-        <section id="formulario">
-            <h1>Termômetro</h1>
-            <form action="salvar.php" method="get">
-                <input type="range" name="temp" id="temp" min="0" max="100" value="30" oninput="mudatemp()"> <label for="temp" id="valor">30<sup>o</sup>C</label>
+        <section id="entrada">
+            <h1>Situação de Alunos</h1>
+            <p>Alunos possuem sua situação definida pela média entre as notas. Consulte a lista a seguir:</p>
+            <ul>
+                <li>Média abaixo de 4,0: Aluno REPROVADO</li>
+                <li>Média entre 4,0 e 6,9: Aluno em RECUPERAÇÃO</li>
+                <li>Média 7,0 ou superior: Aluno APROVADO</li>
+            </ul>
+            <h2>Dados do aluno</h2>
+            <form action="salvar.php" method="get" onsubmit="return situacao()">
+                <label for="nome">Nome </label>
+                <input type="text" name="nome" id="nome" placeholder="Nome do aluno" maxlength="20" size="20">
+                <br><label for="n1">Nota 1 </label>
+                <input type="number" name="n1" id="n1" min="0" max="10" value="0" step=".5">
+                <br><label for="n2">Nota 2 </label>
+                <input type="number" name="n2" id="n2" min="0" max="10" value="0" step=".5">
+                <br><input type="submit" value="Calcular">
             </form>
-            <br><img src="imagens/03-smiling.png" alt="Temperatura" id="emoji">
+        </section>
+        <section id="saida">
+            <h2>Situação do Aluno</h2>
+            <p id="frase">Resultado</p>
         </section>
     </main>
     <script src="script.js"></script>

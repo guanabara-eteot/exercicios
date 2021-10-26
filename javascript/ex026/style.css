@@ -2,31 +2,32 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: yellowgreen;
 }
 
 main {
-    max-width: 300px;
+    max-width: 500px;
     margin: auto;
 }
 
 section {
-    background-color: lightgray;
+    background-color: white;
     padding: 10px;
-    border: 1px solid black;
+    margin: 10px;
     border-radius: 10px;
-    
 }
 
-h1 {
-    text-align: center;
+span.tipo1 {
+    color: red;
+    font-weight: bolder;
 }
 
-form {
-    width: 190px;
-    margin: auto;
+span.tipo2 {
+    color: blue;
+    font-weight: bolder;
 }
 
-img {
-    display: block;
-    margin: auto;
+span.tipo3 {
+    color: green;
+    font-weight: bolder;
 }

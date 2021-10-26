@@ -1,17 +1,28 @@
-function mudatemp() {
-    let temp = Number(document.getElementById("temp").value)
-    let valor = document.getElementById("valor")
-    let foto = document.getElementById("emoji")
-    valor.innerHTML = `${temp}<sup>o</sup>C`
-    if (temp <= 10) {
-        foto.src = "imagens/01-ice.png"
-    } else if (temp <= 25) {
-        foto.src = "imagens/02-cold.png"
-    }  else if (temp <= 45) {
-        foto.src = "imagens/03-smiling.png"
-    }  else if (temp <= 80) {
-        foto.src = "imagens/04-hot.png"
-    }  else {
-        foto.src = "imagens/05-fire.png"
+let saida = document.getElementById("saida")
+let frase = document.getElementById("frase")
+saida.style.visibility = "hidden"
+
+function fechar() {
+    saida.style.visibility = "hidden"
+}
+
+function situacao() {
+    let nome = document.getElementById("nome").value
+    let nota1 = Number(document.getElementById("n1").value)
+    let nota2 = Number(document.getElementById("n2").value)
+
+    let media = (nota1 + nota2) / 2
+    let situacao = ""
+
+    if (media < 4) {
+        situacao = "<span class='tipo1'>REPROVADO</span>"
+    } else if (media >= 4 && media < 7) {
+        situacao = "<span class='tipo2'>EM RECUPERAÇÃO</span>"
+    } else if (media >= 7) {
+        situacao = "<span class='tipo3'>APROVADO</span>"
     }
+
+    frase.innerHTML = `O aluno ${nome} obteve <strong>média ${media}</strong> e por conta disso está ${situacao}`
+    saida.style.visibility = "visible"
+    return false
 }
