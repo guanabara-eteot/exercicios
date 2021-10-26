@@ -29,3 +29,4 @@
 
 ### Estrutura Condicional if (múltipla)
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex025/" target="_blank">025 - Termômetro Automático</a>
+* Continua...
