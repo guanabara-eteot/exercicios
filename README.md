@@ -25,9 +25,9 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex019/" target="_blank">019 - Par ou Ímpar?</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex020/" target="_blank">020 - Site personalizado</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex021/" target="_blank">021 - Radar de Velocidade</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex022/" target="_blank">022 - Ano Bissexto</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex023/" target="_blank">023 - Bolsa Família</a>
-* Continua...
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex022/" target="_blank">022 - O número é divisível?</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex023/" target="_blank">023 - Ano Bissexto</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex024/" target="_blank">024 - Bolsa Família</a>
 
 ### Estrutura Condicional if (múltipla)
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex025/" target="_blank">025 - Termômetro Automático</a>

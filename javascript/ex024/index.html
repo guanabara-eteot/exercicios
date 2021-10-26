@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Programa Bolsa Família</h1>
+            <img src="bolsa-familia.png" alt="Bolsa Família">
+            <p>O Programa Bolsa Família (PBF) é um programa de transferência de renda do Governo Federal. Consiste na ajuda financeira às famílias pobres que possuem renda per capita de R$ 89,00 a R$ 178,00 que tenham em sua composição gestantes e crianças ou adolescentes entre 0 e 17 anos e extremamente pobres (com renda per capita até R$ 89,00).</p>
+            <h2>Posso participar do PBF?</h2>
+            <form action="salvar.php" method="get" onsubmit="return pbf()">
+                <label for="renda">Renda Total: R$</label>
+                <input type="number" name="renda" id="renda" min="0" max="20000" value="1100" step=".5">
+                <br><label for="familia">Membros na Família</label>
+                <select name="familia" id="familia">
+                    <option value="1">um</option>
+                    <option value="2">dois</option>
+                    <option value="3">três</option>
+                    <option value="4">quatro</option>
+                    <option value="5">cinco</option>
+                    <option value="6">seis</option>
+                    <option value="7">sete</option>
+                    <option value="8">oito</option>
+                    <option value="9">nove</option>
+                    <option value="10">dez</option>
+                </select> membro(s)
+                <br><input type="submit" value="Verificar">
+            </form>
+        </section>
+        <section id="saida">
+            <h2>Avaliação PBF</h2>
+            <p id="frase">Resultado...</p>
+            <button onclick="fechar()">Fechar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
