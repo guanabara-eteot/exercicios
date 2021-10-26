@@ -9,12 +9,27 @@
 </head>
 <body>
     <main>
-        <section id="formulario">
-            <h1>Termômetro</h1>
-            <form action="salvar.php" method="get">
-                <input type="range" name="temp" id="temp" min="0" max="100" value="30" oninput="mudatemp()"> <label for="temp" id="valor">30<sup>o</sup>C</label>
+        <section id="entrada">
+            <h1>Promoção Dia das Mulheres</h1>
+            <p>No Dia Internacional das Mulheres estamos dando descontos em todas as compras, mas as mulheres ganham um desconto maior (15%) do que os homens (10%).</p>
+            <form action="salvar.php" method="get" onsubmit="return descontao()">
+                <label for="preco">Valor da Compra: R$</label>
+                <input type="number" name="preco" id="preco" min="1" max="10000" value="0" step="0.5">
+                <br><fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="masc" onchange="mudasexo()">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sexo" id="femi" checked onchange="mudasexo()">
+                    <label for="femi">Feminino</label>
+                </fieldset>
+                <br><input type="submit" value="Calcular Desconto">
             </form>
-            <br><img src="imagens/03-smiling.png" alt="Temperatura" id="emoji">
+        </section>
+
+        <section id="saida">
+            <h2>Valor com Desconto</h2>
+            <p id="frase">Resultado</p>
+            <button onclick="fechar()">Fechar</button>
         </section>
     </main>
     <script src="script.js"></script>

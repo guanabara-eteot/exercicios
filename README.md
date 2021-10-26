@@ -28,7 +28,8 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex022/" target="_blank">022 - O número é divisível?</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex023/" target="_blank">023 - Ano Bissexto</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex024/" target="_blank">024 - Bolsa Família</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex025/" target="_blank">025 - Desconto Dia das Mulheres</a>
 
 ### Estrutura Condicional if (múltipla)
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex025/" target="_blank">025 - Termômetro Automático</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex026/" target="_blank">026 - Termômetro Automático</a>
 * Continua...
