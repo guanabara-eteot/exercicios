@@ -1,28 +1,25 @@
 let saida = document.getElementById("saida")
-let frase = document.getElementById("frase")
+let result = document.getElementById("resultado")
+let msg = document.getElementById("mensagem")
+
 saida.style.visibility = "hidden"
 
 function fechar() {
     saida.style.visibility = "hidden"
 }
 
-function situacao() {
-    let nome = document.getElementById("nome").value
-    let nota1 = Number(document.getElementById("n1").value)
-    let nota2 = Number(document.getElementById("n2").value)
+function comparar() {
+    let n1 = Number(document.getElementById("n1").value)
+    let n2 = Number(document.getElementById("n2").value)
 
-    let media = (nota1 + nota2) / 2
-    let situacao = ""
-
-    if (media < 4) {
-        situacao = "<span class='tipo1'>REPROVADO</span>"
-    } else if (media >= 4 && media < 7) {
-        situacao = "<span class='tipo2'>EM RECUPERAÇÃO</span>"
-    } else if (media >= 7) {
-        situacao = "<span class='tipo3'>APROVADO</span>"
+    result.innerHTML = `Comparando os valores ${n1} e ${n2}`
+    if (n1 > n2) {
+        msg.innerHTML = `O valor ${n1} é maior que ${n2}.`
+    } else if (n1 < n2) {
+        msg.innerHTML = `O valor ${n1} é menor que ${n2}.`
+    } else if (n1 == n2) {
+        msg.innerHTML = `Os dois valores são iguais.`
     }
-
-    frase.innerHTML = `O aluno ${nome} obteve <strong>média ${media}</strong> e por conta disso está ${situacao}`
     saida.style.visibility = "visible"
     return false
 }

@@ -2,20 +2,32 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: darkslategray;
+    background-color: yellowgreen;
 }
 
 main {
-    max-width: 300px;
+    max-width: 500px;
     margin: auto;
 }
 
-h1#msg, p#frase, p.obs {
-    color: white;
-    text-align: center;
+section {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-p.obs {
-    margin-top: 200px;
-    font-size: 0.7em;
+span.tipo1 {
+    color: red;
+    font-weight: bolder;
+}
+
+span.tipo2 {
+    color: blue;
+    font-weight: bolder;
+}
+
+span.tipo3 {
+    color: green;
+    font-weight: bolder;
 }

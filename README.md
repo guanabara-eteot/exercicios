@@ -31,7 +31,8 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex025/" target="_blank">025 - Desconto Dia das Mulheres</a>
 
 ### Estrutura Condicional if (múltipla)
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex026/" target="_blank">026 - Situação do Aluno</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex027/" target="_blank">027 - Dia, tarde ou noite?</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex028/" target="_blank">028 - Termômetro Automático</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex026/" target="_blank">026 - Maior, menor ou igual?</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex026/" target="_blank">027 - Situação do Aluno</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex027/" target="_blank">028 - Dia, tarde ou noite?</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex028/" target="_blank">029 - Termômetro Automático</a>
 * Continua...
