@@ -17,7 +17,7 @@
         function analisar() {
             let calend = new Date()
             frase.innerHTML = `Dia: ${calend.getDate()}`
-            frase.innerHTML += `<br>Mês: ${calend.getMonth()}`
+            frase.innerHTML += `<br>Mês: ${calend.getMonth() + 1}` // O primeiro mês é 0
             frase.innerHTML += `<br>Ano: ${calend.getFullYear()}`
             frase.innerHTML += `<br>Dia da Semana: ${calend.getDay()} (Domingo é 0)`
             frase.innerHTML += `<br>Horas: ${calend.getHours()}`
