@@ -5,7 +5,17 @@ body {
     background-color: darkslategray;
 }
 
-h1#msg, p#frase {
+main {
+    max-width: 300px;
+    margin: auto;
+}
+
+h1#msg, p#frase, p.obs {
     color: white;
     text-align: center;
+}
+
+p.obs {
+    margin-top: 200px;
+    font-size: 0.7em;
 }

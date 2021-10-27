@@ -5,7 +5,7 @@ let calend = new Date()
 let hora = calend.getHours()
 
 // Remova o comentário da linha abaixo para testar outros valores
-// hora = 11
+// hora = 14
 
 frase.innerHTML = `Agora são ${hora} horas`
 
