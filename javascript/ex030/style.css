@@ -41,13 +41,14 @@ section {
 }
 
 span.dica {
+    font-size: 0.6em;
     cursor: pointer;
+    border-bottom: 1px dotted black;
 }
 
 span.dica span.dicatxt {
     display: block;
     visibility: hidden;
-    font-size: 0.6em;
     background: darkgray;
     border: 1px solid gray;
     width: 170px;
