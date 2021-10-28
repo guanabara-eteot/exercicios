@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Classifique seu terreno</h1>
+        </header>
+        <section id="entrada">
+            <h2>Medidas do Terreno</h2>
+            <form action="salvar.php" method="get" onsubmit="return analisar()">
+                <label for="larg">Largura: </label>
+                <input type="number" name="larg" id="larg" min="1" max="500" value="0" step="0.1" oninput="calc_area()"> m
+                <br><label for="comp">Comprimento: </label>
+                <input type="number" name="comp" id="comp"min="1" max="500" value="0" step="0.1" oninput="calc_area()"> m
+                <br><label for="area">Área</label>
+                <input type="number" name="area" id="area" value="0" readonly> m<sup>2</sup> 
+                <span class="dica">(&#x2139;)
+                    <span class="dicatxt">
+                        Tipos de terreno:
+                        <br>- até 100m<sup>2</sup>: POPULAR
+                        <br>- 100 a 500m<sup>2</sup>: MASTER
+                        <br>- 500 a 1000m<sup>2</sup>: VIP
+                        <br>- acima 1000m<sup>2</sup>: INDUSTRIAL
+                    </span>
+                </span>
+                <br><input type="submit" value="Analisar">
+            </form>
+        </section>
+        <section id="saida">
+            <h2>Tipo do Terreno</h2>
+            <p id="mensagem">Preencha o formulário acima para uma análise completa.</p>
+        </section>
+        <footer>
+            Site criado para a ETEOT
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

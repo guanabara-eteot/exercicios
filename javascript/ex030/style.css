@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(61, 121, 61);
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    max-width: 500px;
+    background-color: white;
+    margin: auto;
+    padding: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.521);
+}
+
+header {
+    background-color: green;
+    background-image: url("imagens/grama.jpg");
+    background-position: center bottom;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+section {
+    padding: 10px;
+}
+
+span.dica {
+    cursor: pointer;
+}
+
+span.dica span.dicatxt {
+    display: block;
+    visibility: hidden;
+    font-size: 0.6em;
+    background: darkgray;
+    border: 1px solid gray;
+    width: 170px;
+    padding: 2px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+}
+
+span.dica:hover span.dicatxt {
+    visibility: visible;
+}
+
+span.destaque {
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+
+footer {
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    
+}
