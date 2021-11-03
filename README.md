@@ -37,4 +37,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex028/" target="_blank">028 - Dia, tarde ou noite?</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex029/" target="_blank">029 - Termômetro Automático</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex030/" target="_blank">030 - Classificação de Terrenos</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex031/" target="_blank">031 - Classificação de Triângulos</a>
 * Continua...
