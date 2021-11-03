@@ -10,16 +10,21 @@ let j1 = document.getElementById("j1")
 let j2 = document.getElementById("j2")
 
 function muda() {
-    if (j1.alt == "pedra") {
-        j1.src = "imagens/papel.png"
-        j1.alt = "papel"
-    } else if (j1.alt == "papel") {
-        j1.src = "imagens/tesoura.png"
-        j1.alt = "tesoura"
-    } else if (j1.alt == "tesoura") {
-        j1.src = "imagens/pedra.png"
-        j1.alt = "pedra"
+    if (btnjogo.style.visibility == "hidden") {
+        alert("Você só pode mudar a mão no início do jogo!")
+    } else {
+        if (j1.alt == "pedra") {
+            j1.src = "imagens/papel.png"
+            j1.alt = "papel"
+        } else if (j1.alt == "papel") {
+            j1.src = "imagens/tesoura.png"
+            j1.alt = "tesoura"
+        } else if (j1.alt == "tesoura") {
+            j1.src = "imagens/pedra.png"
+            j1.alt = "pedra"
+        }
     }
+    
 }
 
 function jogar() {
