@@ -38,4 +38,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex029/" target="_blank">029 - Termômetro Automático</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex030/" target="_blank">030 - Classificação de Terrenos</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex031/" target="_blank">031 - Classificação de Triângulos</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex032/" target="_blank">032 - Sorteador de números</a>
 * Continua...
