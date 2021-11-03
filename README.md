@@ -40,4 +40,6 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex031/" target="_blank">031 - Classificação de Triângulos</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex032/" target="_blank">032 - Sorteador de números</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/ex033/" target="_blank">033 - Pedra, papel e tesoura</a>
-* Continua...
+
+### Estrutura Condicional switch
+* Em breve...
