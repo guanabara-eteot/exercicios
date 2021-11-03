@@ -5,26 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício JavaScript</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: thistle;
+        }
+
+        main {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <main>
         <section id="jogador">
-            <h1>Sua jogada</h1>
-            <p>Clique na mão para escolher sua opção.</p>
-            <img src="imagens/pedra.png" alt="pedra" onclick="muda()" id="j1">
-            <br><button onclick="jogar()" id="btnjogar">Jogar</button>
-        </section>
-        <section id="computador">
-            <h1>Computador</h1>
-            <img src="imagens/pedra.png" alt="pedra" id="j2">
+            <h1>Vamos jogar Par ou Ímpar?</h1>
+            <form action="salvar.php" method="get" onsubmit="return jogar()">
+                <label for="num">Quantos dedos você vai mostrar? </label>
+                <select name="num" id="num">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <fieldset>
+                    <legend>Escolha sua opção:</legend>
+                    <input type="radio" name="opc" id="par" checked>
+                    <label for="par">Par</label>
+                    <br><input type="radio" name="opc" id="impar">
+                    <label for="impar">Ímpar</label>
+                </fieldset>
+                <br><input type="submit" value="Jogar" id="botao">
+            </form>
         </section>
         <section id="resultado">
-            <h1>Resultado</h1>
-            <p id="mensagem"></p>
-            <button onclick="restart()">Jogar de novo!</button>
+            <h2>Analisando as jogadas</h2>
+            <p id="frase1">Frase de análise</p>
+            <h2>Resultado Final</h2>
+            <p id="frase2">Aqui vai aparecer o resultado</p>
+            <button onclick="reset()">Jogar de novo</button>
         </section>
     </main>
-    <script src="jogo.js"></script>
+    <script>
+        let btn = document.getElementById("botao")
+        let opc = document.getElementsByName("opc")
+        let res = document.getElementById("resultado")
+        let f1 = document.getElementById("frase1")
+        let f2 = document.getElementById("frase2")
+
+        res.style.visibility = "hidden"
+
+        function jogar() {
+            // Capturando jogada do usuário
+            let p1opc = ""
+            let p2opc = ""
+            let p1num = Number(document.getElementById("num").value)
+            if (opc[0].checked) {
+                p1opc = "par"
+                p2opc = "ímpar"
+            } else if (opc[1].checked) {
+                p1opc = "ímpar"
+                p2opc = "par"
+            }
+
+            // Sorteando a jogada do computador
+            let p2num = Math.floor(Math.random() * 5 + 0)
+            f1.innerHTML = `Você mostrou <strong>${p1num} dedos</strong> e ficou com opção <strong>${p1opc}</strong>`
+            f1.innerHTML += `<br>O computador mostrou <strong>${p2num} dedos</strong> e ficou com opção <strong>${p2opc}</strong>`
+
+            // Resultado final
+            let total = p1num + p2num
+            let final = ""
+            f2.innerHTML = `Tivemos um total de <strong>${total} dedos</strong> `
+            if (total % 2 == 0) {
+                final = "par"
+            } else {
+                final = "ímpar"
+            }
+
+            if (final == p1opc) {
+                f2.innerHTML += `<br>PARABÉNS! Você venceu!`
+            } else {
+                f2.innerHTML += `<br>O COMPUTADOR venceu!`
+            }
+
+            res.style.visibility = "visible"
+            return false
+        }
+
+        function reset() {
+            res.style.visibility = "hidden"
+        }
+    </script>
 </body>
 </html>
