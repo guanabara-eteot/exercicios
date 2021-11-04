@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: thistle;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
