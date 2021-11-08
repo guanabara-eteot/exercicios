@@ -5,50 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício JavaScript</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <section id="entrada">
-            <h1>Super Reajuste Salarial</h1>
-            <p>Uma empresa quer implementar o novo plano de reajuste salarial dos seus funcionários, baseados no sexo e tempo de trabalho na instituição, de acordo com a lista a seguir:</p>
-            <ul>
-                <li>Homens</li>
-                <ul>
-                    <li>menos de 20 anos: +5%</li>
-                    <li>de 20 a 30 anos: +13%</li>
-                    <li>mais de 30 anos: +25%</li>
-                </ul>
-                <li>Mulheres</li>
-                <ul>
-                    <li>menos de 15 anos: +7%</li>
-                    <li>de 15 até 20 anos: +15%</li>
-                    <li>mais de 20 anos: +26%</li>
-                </ul>
-            </ul>
-
-            <h2>Dados do Funcionário</h2>
-            <form action="cadastro.php" method="get" onsubmit="return reajustar()">
-                <label for="nome">Nome </label>
-                <input type="text" name="nome" id="nome" maxlength="40" size="40" placeholder="Nome completo">
-                <br><label for="ano">Ano de Contratação</label>
-                <input type="number" name="ano" id="ano" min="1990" max="2021" value="2010">
-                <br><label for="sal">Salário Atual R$</label>
-                <input type="number" name="sal" id="sal" min="1100" max="10000" value="1100" step=".5">
-                <br><fieldset>
-                    <legend>Sexo</legend>
-                    <input type="radio" name="sexo" id="mas" value="M" checked><label for="mas"> Masculino</label>
-                    <input type="radio" name="sexo" id="fem" value="M"><label for="fem"> Feminino</label>
-                </fieldset>
-                <br><input type="submit" value="Reajustar">
+            <h1>Descubra seus horários</h1>
+            <form action="salvar.php" method="get" onsubmit="return horario()">
+                <label for="turno">Escolha seu turno: </label>
+                <select name="turno" id="turno">
+                    <option value="m">manhã</option>
+                    <option value="t">tarde</option>
+                    <option value="n">noite</option>
+                </select>
+                <input type="submit" value="Ver horários">
             </form>
         </section>
         <section id="saida">
-            <h2>Cálculo do novo salário</h2>
-            <p id="msg">Cálculo do salário atualizado</p>
-            <button onclick="fechar()">Fechar</button>
+            <h2 id="titulo">Horário para...</h2>
+            <p id="mensagem">Mensagem...</p>
         </section>
     </main>
-    <script src="funcoes.js"></script>
+    <script src="escola.js"></script>
 </body>
 </html>
