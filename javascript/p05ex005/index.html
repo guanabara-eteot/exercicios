@@ -20,8 +20,6 @@
             let fim = Number(prompt("A contagem termina em..."))
             let passo = Number(prompt("Qual vai ser o valor do salto?"))
 
-            num.innerHTML = `Fazendo a contagem de ${inicio} até ${fim}, com passo ${passo}: <br><br>`
-
             // Não pode usar o passo 0. Se o passo for 0, assumir passo 1
             if (passo == 0) {
                 passo = 1
@@ -31,6 +29,8 @@
             if (passo < 0) {
                 passo = passo * (-1) // Também pode usar passo *= -1
             }
+
+            num.innerHTML = `Fazendo a contagem de ${inicio} até ${fim}, com passo ${passo}: <br><br>`
 
             // Identificando o tipo de contagem...
             if (inicio < fim) {
