@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Calculadora de IMC</h1>
+            <p>O <strong>Índice de Massa Corporal (IMC)</strong> é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS).</p>
+            <p>Consulte a Wikipedia para uma <a href="https://pt.wikipedia.org/wiki/Índice_de_massa_corporal" target="_blank">tabela completa para cálculo do IMC</a>.</p>
+            <h2>Calcule seu IMC</h2>
+            <form action="imc.php" method="get" onsubmit="return calcimc()">
+                <label for="peso">Peso </label>
+                <input type="number" name="peso" id="peso" min="1" max="200" value="50" step="0.5">Kg
+                <br><label for="altura">Altura </label>
+                <input type="number" name="altura" id="altura" min="0.1" max="2.4" value="1.6" step="0.01">m
+                <br><input type="submit" value="Calcular IMC">
+            </form>
+        </section>
+        <section id="saida">
+            <img src="images/imc-001.png" alt="IMC" id="fotoimc">
+            <h2>Cálculo do IMC</h2>
+            <p id="msg">Status do IMC</p>
+            
+        </section>
+    </main>
+    <script src="imc.js"></script>
+</body>
+</html>
