@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Contador Inteligente com Formulário</h1>
+            <p>Praticamente o mesmo exercício feito anteriormente, só que com a aplicação de formulário para tornar tudo mais controlado e bonito.</p>
+            <h2>Preencha os dados sobre a contagem</h2>
+            <form action="salvar.php" method="get" onsubmit="return contagem()">
+                <label for="ini">Contagem vai começar em </label>
+                <input type="number" name="ini" id="ini" min="-1000" max="1000" value="0">
+                <br><label for="fim">Contagem vai terminar em </label>
+                <input type="number" name="fim" id="fim" min="-1000" max="1000" value="10">
+                <br><label for="passo">Qual vai ser o salto </label>
+                <input type="number" name="passo" id="passo" min="1" max="1000" value="1">
+                <br><input type="submit" value="Contar">
+            </form>
+        </section>
+        <section id="saida">
+            <h2>Contagem personalizada</h2>
+            <p id="mensagem">Contagem...</p>
+        </section>
+    </main>
+    <script src="contador.js"></script>
+</body>
+</html>
