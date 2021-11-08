@@ -9,7 +9,7 @@ function calcimc() {
     let alt = Number(document.getElementById("altura").value)
     let imc = peso / (alt * alt)
 
-    msg.innerHTML = `Uma pessoa com peso de ${peso.toFixed(2)}Kg e ${alt.toFixed(2)}m de altura tem o IMC de ${imc.toFixed(1)}, o que caracteriza uma classificação `
+    msg.innerHTML = `Uma pessoa com peso de ${peso.toFixed(2)}Kg e ${alt.toFixed(2)}m de altura tem o <strong>IMC de ${imc.toFixed(1)}</strong>, o que caracteriza uma classificação `
 
     if (imc < 18.5) {
         msg.innerHTML += `<strong>ABAIXO DO PESO</strong>.`
