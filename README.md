@@ -46,4 +46,8 @@
 
 ### Parte 04 - Estrutura Condicional switch
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p04ex001/" target="_blank">P04EX001 - Horário da Escola</a>
-* Em breve...
+* Em breve mais exercícios...
+
+### Parte 05 - Estrutura de Repetição while
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex001/" target="_blank">P05EX001 - Contando de 1 até 100</a>
+* Em breve mais exercícios...
