@@ -22,11 +22,16 @@
 
             num.innerHTML = `Fazendo a contagem de ${inicio} até ${fim}, com passo ${passo}: <br><br>`
 
-            // Se o passo for 0 ou negativo, assumir 1
-            if (passo <= 0) {
+            // Não pode usar o passo 0. Se o passo for 0, assumir passo 1
+            if (passo == 0) {
                 passo = 1
             }
-            
+
+            // Não pode usar passo negativo, se for negativo, tornar positivo multiplicando por (-1)
+            if (passo < 0) {
+                passo = passo * (-1) // Também pode usar passo *= -1
+            }
+
             // Identificando o tipo de contagem...
             if (inicio < fim) {
                 // Contagem crescente
