@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+</head>
+<body>
+    <h1>Contagem regressiva de 10 até 0</h1>
+    <button onclick="contar()">Aperte aqui</button>
+    <p id="numeros">A contagem vai aparecer aqui...</p>
+    <script>
+        function contar() {
+            let num = document.getElementById("numeros")
+            num.innerHTML = ``
+
+            let n = 10
+            while (n >= 0) {
+                num.innerHTML += `${n} `
+                n = n - 1
+            }
+            num.innerHTML += `FIM` 
+        }
+    </script>
+</body>
+</html>
