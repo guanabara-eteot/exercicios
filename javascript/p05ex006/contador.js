@@ -1,5 +1,6 @@
 let saida = document.getElementById("saida")
 let msg = document.getElementById("mensagem")
+saida.style.visibility = "hidden"
 
 function contagem() {
     let ini = Number(document.getElementById("ini").value)
@@ -26,6 +27,6 @@ function contagem() {
     }
     msg.innerHTML += `&#x1F3C1; `
 
-
+    saida.style.visibility = "visible"
     return false
 }
