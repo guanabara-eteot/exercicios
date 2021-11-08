@@ -53,4 +53,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex002/" target="_blank">P05EX002 - Contagem regressiva</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex003/" target="_blank">P05EX003 - Pulando de 5 em 5</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex004/" target="_blank">P05EX004 - Contador que pergunta</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex005/" target="_blank">P05EX005 - Contador inteligente</a>
 * Em breve mais exercícios...
