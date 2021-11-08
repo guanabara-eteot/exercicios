@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+</head>
+<body>
+    <h1>Contador Inteligente</h1>
+    <p>Este contador inteligente vai conseguir perceber se a contagem a ser feita é crescente ou regressiva.</p>
+    <button onclick="contar()">Aperte aqui</button>
+    <p id="numeros">A contagem vai aparecer aqui...</p>
+    <script>
+        function contar() {
+            let num = document.getElementById("numeros")
+
+            // Leitura dos valores através dos prompts
+            let inicio = Number(prompt("A contagem vai começar em..."))
+            let fim = Number(prompt("A contagem termina em..."))
+            let passo = Number(prompt("Qual vai ser o valor do salto?"))
+
+            num.innerHTML = `Fazendo a contagem de ${inicio} até ${fim}, com passo ${passo}: `
+
+            // Identificando o tipo de contagem...
+            if (inicio < fim) {
+                // Contagem crescente
+                let n = inicio
+                while (n <= fim) {
+                    num.innerHTML += `${n} `
+                    n += passo
+                }                
+            } else if (inicio > fim) {
+                // Contagem regressiva
+                let n = inicio
+                while (n >= fim) {
+                    num.innerHTML += `${n} `
+                    n -= passo
+                }                
+            }
+            num.innerHTML += `FIM`          
+        }
+    </script>
+</body>
+</html>
