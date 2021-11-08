@@ -45,4 +45,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p03ex010/" target="_blank">P03EX010 - Jogo de pedra, papel e tesoura</a>
 
 ### Parte 04 - Estrutura Condicional switch
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p04ex001/" target="_blank">P04EX011 - Horário da Escola</a>
 * Em breve...
