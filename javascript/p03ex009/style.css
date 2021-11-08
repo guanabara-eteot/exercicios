@@ -1,12 +1,11 @@
 @charset "UTF-8";
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: thistle;
+    background-color: orangered;
 }
 
 main {
-    max-width: 500px;
+    max-width: 400px;
     margin: auto;
 }
 

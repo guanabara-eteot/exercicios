@@ -39,8 +39,9 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p03ex004/" target="_blank">P03EX004 - Termômetro Automático</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p03ex005/" target="_blank">P03EX005 - Classificação de Terrenos</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p03ex006/" target="_blank">P03EX006 - Classificação de Triângulos</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p03ex007/" target="_blank">P03EX007 - Jogo de par ou ímpar</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p03ex008/" target="_blank">P03EX008 - Jogo de pedra, papel e tesoura</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p03ex007/" target="_blank">P03EX007 - Calculadora de IMC</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p03ex008/" target="_blank">P03EX008 - Jogo de par ou ímpar</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p03ex009/" target="_blank">P03EX009 - Jogo de pedra, papel e tesoura</a>
 
 ### Parte 04 - Estrutura Condicional switch
 * Em breve...
