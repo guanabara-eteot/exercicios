@@ -7,20 +7,20 @@
     <title>Exercício JavaScript</title>
 </head>
 <body>
-    <h1>Contando de 1 até 10</h1>
-    <p>Aperte o botão a seguir e o computador vai mostrar uma contagem que vai de 1 até 10.</p>
+    <h1>Contagem de 5 em 5</h1>
+    <p>Aperte o botão abaixo para fazer uma contagem que vai de 0 até 100, mas pulando de 5 em 5 números.</p>
     <button onclick="contar()">Aperte aqui</button>
     <p id="numeros">A contagem vai aparecer aqui...</p>
     <script>
         function contar() {
             let num = document.getElementById("numeros")
             num.innerHTML = ``
-
-            // Contando de 1 até 10
-            let n = 1
-            while (n <= 10) {
+            
+            // Contando de 0 a 100, pulando de 5 em 5
+            let n = 0
+            while (n <= 100) {
                 num.innerHTML += `${n} `
-                n = n + 1 // Também serve usar a expressão n += 1 ou n ++
+                n = n + 5 // Também pode usar n += 5
             }
             num.innerHTML += `FIM` 
         }

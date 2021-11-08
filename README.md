@@ -51,4 +51,6 @@
 ### Parte 05 - Estrutura de Repetição while
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex001/" target="_blank">P05EX001 - Contando de 1 até 10</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex002/" target="_blank">P05EX002 - Contagem regressiva</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex003/" target="_blank">P05EX003 - Pulando de 5 em 5</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex004/" target="_blank">P05EX004 - Contador que pergunta</a>
 * Em breve mais exercícios...

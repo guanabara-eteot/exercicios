@@ -7,7 +7,8 @@
     <title>Exercício JavaScript</title>
 </head>
 <body>
-    <h1>Contagem regressiva de 10 até 0</h1>
+    <h1>Contagem regressiva</h1>
+    <p>Aperte o botão abaixo para fazer uma contagem regressiva que vai de 10 até 0.</p>
     <button onclick="contar()">Aperte aqui</button>
     <p id="numeros">A contagem vai aparecer aqui...</p>
     <script>
@@ -15,10 +16,11 @@
             let num = document.getElementById("numeros")
             num.innerHTML = ``
 
+            // Contando de 10 até 0 (regressiva)
             let n = 10
             while (n >= 0) {
                 num.innerHTML += `${n} `
-                n = n - 1
+                n = n - 1 // Também serve usar a expressão n -= 1 ou n --
             }
             num.innerHTML += `FIM` 
         }

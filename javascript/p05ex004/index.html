@@ -7,8 +7,8 @@
     <title>Exercício JavaScript</title>
 </head>
 <body>
-    <h1>Contando de 1 até 10</h1>
-    <p>Aperte o botão a seguir e o computador vai mostrar uma contagem que vai de 1 até 10.</p>
+    <h1>Contador Especial</h1>
+    <p>Este contador especial vai perguntar ao usuário onde a contagem começa e onde ela vai terminar. Não precisa se preocupar com contagens regressivas por enquanto.</p>
     <button onclick="contar()">Aperte aqui</button>
     <p id="numeros">A contagem vai aparecer aqui...</p>
     <script>
@@ -16,11 +16,15 @@
             let num = document.getElementById("numeros")
             num.innerHTML = ``
 
-            // Contando de 1 até 10
-            let n = 1
-            while (n <= 10) {
+            // Leitura dos valores através dos prompts
+            let inicio = Number(prompt("A contagem vai começar em..."))
+            let fim = Number(prompt("A contagem termina em..."))
+
+            // Realizando a contagem de acordo com os valores digitados
+            let n = inicio
+            while (n <= fim) {
                 num.innerHTML += `${n} `
-                n = n + 1 // Também serve usar a expressão n += 1 ou n ++
+                n = n + 1
             }
             num.innerHTML += `FIM` 
         }
