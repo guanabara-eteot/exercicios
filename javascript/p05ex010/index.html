@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+</head>
+<body>
+    <h1>Lendo vários dados</h1>
+    <p>Esse exercício vai pedir que você digite cinco números na sequência e depois vai mostrar o somatório entre todos eles. Cuidado para digitar apenas números, caso contrário os valores inválidos serão ignorados e vão valer zero.</p>
+    <button onclick="somavalores()">Iniciar a Leitura</button>
+    <p id="resultado"></p>
+
+    <script>
+        let res = document.getElementById("resultado")
+
+        function somavalores() {
+            let num = 0
+            let soma = 0
+            let cont = 1
+            while (cont <= 5) {
+                num = Number(prompt(`Digite o ${cont}º número\nSoma acumulada até aqui: ${soma}`))
+                soma += num
+                cont ++
+            }
+            res.innerHTML = `A soma de todos os números digitados é igual a ${soma}.`
+        }
+    </script>
+</body>
+</html>
