@@ -11,7 +11,7 @@ function contagem() {
     let c = 0
     while (c <= 100) {
         if (c % n == 0) {
-            msg.innerHTML += `<mark>&nbsp;${c}&nbsp;</mark>&#x2192; `
+            msg.innerHTML += `<mark>&nbsp;${c}&nbsp;</mark>&#x2192;`
         } else {
             msg.innerHTML += `&nbsp;${c}&nbsp;&#x2192; `
         }
