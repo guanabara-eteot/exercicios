@@ -11,4 +11,6 @@ function tabuada() {
         m.innerHTML += `${n} x ${c} = <strong>${n * c}</strong> <br>`
         c ++
     }
+
+    return false
 }
