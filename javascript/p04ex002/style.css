@@ -21,6 +21,7 @@ section {
 
 img#foto {
     display: block;
+    max-width: 450px;
     margin: auto;
     border-radius: 10px;
 }
