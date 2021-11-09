@@ -1,6 +1,7 @@
 let tit = document.getElementById("titulo")
 let msg = document.getElementById("mensagem")
 
+// Perceba que lá no código HTML, na linha 10, fizemos a chamada do evento onload da tag <body> para forçar que a função contagem() seja executada automaticamente assim que o site for carregado.
 function contagem() {
     let n = Number(document.getElementById("num").value)
 
