@@ -59,4 +59,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex008/" target="_blank">P05EX008 - Gerador de Tabuada</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex009/" target="_blank">P05EX009 - Somando na Sequência</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex010/" target="_blank">P05EX010 - Lendo vários números</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/p05ex011/" target="_blank">P05EX011 - Total de pares e ímpares</a>
 * Em breve mais exercícios...
