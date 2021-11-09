@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+</head>
+<body>
+    <h1>Total de pares e ímpares</h1>
+    <p>Esse exercício vai pedir que você digite dez números na sequência e depois vai mostrar quantos são pares e quantos são ímpares. Cuidado para digitar apenas números, caso contrário os valores inválidos serão ignorados e vão valer zero.</p>
+    <button onclick="totalizar()">Vamos começar</button>
+    <p id="resultado"></p>
+
+    <script>
+        let res = document.getElementById("resultado")
+
+        function totalizar() {
+            let num = 0
+            let totpar = 0
+            let totimpar = 0
+            let cont = 1
+            while (cont <= 10) {
+                num = Number(prompt(`Digite o ${cont}º número\nTotal de pares = ${totpar}\nTotal de ímpares = ${totimpar}`))
+                if (num % 2 == 0) {
+                    totpar ++
+                } else {
+                    totimpar ++
+                }
+                cont ++
+            }
+            res.innerHTML = `Você digitou um total de <strong>${totpar} pares</strong> e <strong>${totimpar} ímpares</strong>.`
+        }
+    </script>
+</body>
+</html>
