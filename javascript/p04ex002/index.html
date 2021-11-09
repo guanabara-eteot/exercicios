@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Estações do Ano</h1>
+            <form action="salvar.php" method="get" onsubmit="return estacao()">
+                <label for="mes">Escolha o mês atual: </label>
+                <select name="mes" id="mes">
+                    <option value="jan">Janeiro</option>
+                    <option value="fev">Fevereiro</option>
+                    <option value="mar">Março</option>
+                    <option value="abr">Abril</option>
+                    <option value="mai">Maio</option>
+                    <option value="jun">Junho</option>
+                    <option value="jul">Julho</option>
+                    <option value="ago">Agosto</option>
+                    <option value="set">Setembro</option>
+                    <option value="out">Outubro</option>
+                    <option value="nov">Novembro</option>
+                    <option value="dez">Dezembro</option>
+                </select>
+                <input type="submit" value="Ver estação">
+            </form>
+        </section>
+        <section id="saida">
+            <h2 id="mensagem">Estação do Ano</h2>
+            <img src="" alt="Estação" id="foto">
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
