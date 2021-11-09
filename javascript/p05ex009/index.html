@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Somando na sequência</h1>
+            <form action="salvar.php" method="get" onsubmit="return somar()">
+                <label for="ini">Valor inicial (menor) </label>
+                <input type="number" name="ini" id="ini" min="-1000" max="1000" value="0">
+                <br><label for="fim">Valor final (maior) </label>
+                <input type="number" name="fim" id="fim" min="-1000" max="1000" value="10">
+                <br><input type="submit" value="Somar">
+            </form>
+        </section>
+        <section id="saida">
+            <h2>Resultado da Soma</h2>
+            <p id="mensagem"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
