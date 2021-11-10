@@ -20,7 +20,7 @@ function cadastro() {
 
     media = soma / total
     titulo.innerHTML = `${total} pessoas cadastradas`
-    mensagem.innerHTML = `No grupo cadastrado, a média de idade é de <strong>${media.toFixed(1)} anos.</strong>`
+    mensagem.innerHTML = `No grupo de ${total} pessoas cadastradas, a média de idade é de <strong>${media.toFixed(1)} anos.</strong>`
 
     saida.style.visibility = "visible"
     return false
