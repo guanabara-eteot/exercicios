@@ -10,15 +10,22 @@
 <body>
     <main>
         <section id="entrada">
-            <h1>Primos até 1000</h1>
-            <p>Que tal descobrir quais são os números primos até mil? Aperte o botão a seguir e deixe seu computador fazer as contas por você.</p>
-            <button onclick="primos()">Mostre os Primos</button>
+            <h1>Fatorial de um número</h1>
+            <p>Vamos calcular o fatorial de um número natural n, representado por n!, que é o produto de todos os inteiros positivos menores ou iguais a n. </p>
+            <form action="salvar.php" method="get" onsubmit="return fatorial()">
+                <label for="num">Número: </label>
+                <input type="number" name="num" id="num" min="0" max="20" value="5" onchange="mudanum()">
+                <input type="submit" value="Calcular 5!" id="btnfat">
+
+            </form>
+            <p>Exemplo: 5! = 5 x 4 x 3 x 2 x 1 = 120</p>
         </section>
         <section id="saida">
-            <h2>Os números primos até 1000 são</h2>
+            <h2>Calculando</h2>
             <p id="resposta"></p>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
 </html>
