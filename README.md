@@ -43,6 +43,7 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte03/p03ex008/" target="_blank">P03EX008 - Jogo de par ou ímpar</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte03/p03ex009/" target="_blank">P03EX009 - Super reajuste salarial</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte03/p03ex010/" target="_blank">P03EX010 - Jogo de pedra, papel e tesoura</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte03/p03ex011/" target="_blank">P03EX011 - Jogo do número mágico (adivinhação)</a>
 
 ### Parte 04 - Estrutura Condicional switch
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte04/p04ex001/" target="_blank">P04EX001 - Horário da Escola</a>
