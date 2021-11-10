@@ -10,17 +10,17 @@
 <body onload="sorteianum()">
     <main>
         <section id="entrada">
-            <h1>Tente adivinhar em que número eu pensei</h1>
+            <h1>Tente me vencer &#x1F914;</h1>
             <p>Aqui quem fala é o seu computador e eu acabei de pensar em um número mágico entre 1 e 50. Vou te dar 10 chances para tentar adivinhar!</p>
             <form action="salvar.php" method="get" onsubmit="return jogada()" onreset="return restart()">
                 <label for="palpite" id="frase">Tentativa 1:</label>
                 <input type="number" name="palpite" id="palpite" min="1" max="50">
-                <input type="submit" value="Acho que é esse" id="btnjogar">
+                <input type="submit" value="Palpite" id="btnjogar">
                 <input type="reset" value="Recomeçar">
             </form>
         </section>
         <section id="saida">
-            <h2>Resposta do computador</h2>
+            <h2>Resposta do computador &#x1F4BB;</h2>
             <p id="resposta">Aqui eu vou te dando maiores instruções...</p>
         </section>
     </main>
