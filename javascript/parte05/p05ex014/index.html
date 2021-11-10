@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            background-color: cadetblue;
+        }
+
+        main {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        section#saida {
+            font-size: 0.6em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Construindo uma Pirâmide</h1>
+            <form action="salvar.php" method="get" onsubmit="return piramide()">
+                <label for="andares">Quantos andares a pirâmide vai ter?</label>
+                <input type="number" name="andares" id="andares" min="1" max="30" value="10">
+                <input type="submit" value="Construir">
+            </form>
+        </section>
+        <section id="saida">
+            <p id="pir"></p>
+        </section>
+    </main>
+    <script>
+        let pir = document.getElementById("pir")
+
+        function piramide() {
+            let total = Number(document.getElementById("andares").value)
+            pir.innerHTML = ""
+            // Contador de andares da pirâmide
+            let andar = 1
+            // Quantos símbolos vai ter o primeiro andar
+            let simbolos = 1
+            // Contador de quantos símbolos foram mostrados
+            let cont = 1
+            // Contando cada um dos andares
+            while (andar <= total) {
+                // Mostrando a quantidade de símbolos de cada andar
+                while (cont <= simbolos) {
+                    pir.innerHTML += `#`
+                    cont ++
+                }
+                // Terminado o andar, vamos quebrar para a próxima linha
+                pir.innerHTML += "<br>"
+                // O andar de baixo vai ter dois símbolos a mais
+                simbolos += 2
+                // Recomeçando a contagem de símbolos
+                cont = 1
+                // Vamos mudar para o próximo andar
+                andar ++
+            }
+
+            return false
+        }
+    </script>
+</body>
+</html>
