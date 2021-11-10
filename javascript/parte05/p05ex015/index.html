@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.1em;
+            background-color: tomato;
+        }
+
+        main {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Mais jovem e mais velho</h1>
+            <form action="salvar.php" method="get" onsubmit="return cadastro()">
+                <label for="total">Quantas pessoas quer cadastrar?</label>
+                <input type="number" name="total" id="total" min="1" max="10" value="3">
+                <input type="submit" value="Iniciar Cadastro">
+            </form>
+        </section>
+        <section id="saida">
+            <h1>Análise de Dados</h1>
+            <p id="resultado">O resultado aparecerá aqui...</p>
+        </section>
+    </main>
+    <script>
+        let saida = document.getElementById("saida")
+        let res = document.getElementById("resultado")
+
+        function cadastro() {
+            let total = Number(document.getElementById("total").value)
+
+            let nome = ""
+            let idade = 0
+            let soma = 0
+            let media = 0
+            let maiorid = 0
+            let menorid = 0
+            let nomevelho = ""
+            let nomejovem = ""
+
+            let cont = 1
+            while (cont <= total) {
+                nome = prompt(`Nome da ${cont}a pessoa`)
+                idade = Number(prompt(`Idade de ${nome} [${cont}a pessoa]`))
+                soma += idade
+                if (cont == 1) {
+                    maiorid = idade
+                    menorid = idade
+                    nomevelho = nome
+                    nomejovem = nome
+                } else {
+                    if (idade > maiorid) {
+                        maiorid = idade
+                        nomevelho = nome
+                    }
+                    if (idade < menorid) {
+                        menorid = idade
+                        nomejovem = nome
+                    }
+                }
+                cont ++
+            }
+            media = soma / total
+            res.innerHTML = `Ao todo, cadastramos ${total} pessoas.`
+            res.innerHTML += `<br>A média de idade do grupo é ${media.toFixed(1)} anos.`
+            res.innerHTML += `<br>A pessoa mais velha é ${nomevelho}, com ${maiorid} anos.`
+            res.innerHTML += `<br>A pessoa mais jovem é ${nomejovem}, com ${menorid} anos.`
+
+            return false
+        }
+    </script>
+</body>
+</html>
