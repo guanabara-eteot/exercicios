@@ -16,13 +16,13 @@ function sorteianum() {
 function jogada() {
     let palpite = Number(document.getElementById("palpite").value)
     if (palpite == magico) {
-        resp.innerHTML = `PARABÉNS! Você acaba de acertar o número! Eu realmente tinha pensado no valor ${magico}. Você acertou depois de ${tentativas} tentativa(s)!`
+        resp.innerHTML = `&#x2705; PARABÉNS! Você acaba de acertar o número! Eu realmente tinha pensado no valor ${magico}. Você acertou depois de ${tentativas} tentativa(s)! &#x1F44F;`
         btnjogar.style.visibility = "hidden"
     } else {
         if (magico < palpite) {
-            resp.innerHTML = `Você ainda não acertou! Mas o número que eu pensei é MENOR que ${palpite}! Você ainda tem ${chances - tentativas} chances!`
+            resp.innerHTML = `&#x26D4; Você ainda não acertou! Mas o número que eu pensei é MENOR &#x1F53D; que ${palpite}! Você ainda tem ${chances - tentativas} chances!`
         } else if (magico > palpite) {
-            resp.innerHTML = `Não foi dessa vez ainda! Mas o número que eu pensei é MAIOR que ${palpite}! Você ainda tem ${chances - tentativas} chances!`
+            resp.innerHTML = `&#x26D4; Não foi dessa vez ainda! Mas o número que eu pensei é MAIOR &#x1F53C; que ${palpite}! Você ainda tem ${chances - tentativas} chances!`
         }
         tentativas ++
         frase.innerHTML = `Tentativa ${tentativas}:`
