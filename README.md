@@ -63,4 +63,5 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex011/" target="_blank">P05EX011 - Total de pares e ímpares</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex012/" target="_blank">P05EX012 - Maior valor e menor valor</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex013/" target="_blank">P05EX013 - Média de idade do grupo</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex014/" target="_blank">P05EX014 - Construindo uma pirâmide</a>
 * Em breve mais exercícios...
