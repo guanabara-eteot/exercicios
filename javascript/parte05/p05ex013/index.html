@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Média de idade do grupo</h1>
+            <form action="salvar.php" method="get" onsubmit="return cadastro()">
+                <label for="total">Total de pessoas</label>
+                <input type="number" name="total" id="total" min="1" max="10" value="5">
+                <input type="submit" value="Iniciar">
+            </form>
+        </section>
+        <section id="saida">
+            <h2 id="titulo">Título</h2>
+            <p id="mensagem">Mensagem</p>
+        </section>
+    </main>
+    <script>
+        let saida = document.getElementById("saida")
+        let titulo = document.getElementById("titulo")
+        let mensagem = document.getElementById("mensagem")
+
+        saida.style.visibility = "hidden"
+
+        function cadastro() {
+            let total = Number(document.getElementById("total").value)
+            
+            let idade = 0
+            let soma = 0
+            let media = 0
+
+            let cont = 1
+            while (cont <= total) {
+                idade = Number(prompt(`Idade da ${cont}a pessoa`))
+                soma += idade
+                cont ++
+            }
+
+            media = soma / total
+            titulo.innerHTML = `${total} pessoas cadastradas`
+            mensagem.innerHTML = `No grupo cadastrado, a média de idade é de <strong>${media.toFixed(1)} anos.</strong>`
+
+            saida.style.visibility = "visible"
+            return false
+        }
+    </script>
+</body>
+</html>
