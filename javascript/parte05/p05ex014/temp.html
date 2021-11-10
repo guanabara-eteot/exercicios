@@ -49,23 +49,19 @@
 
         function piramide() {
             let total = Number(document.getElementById("andares").value)
-            pir.innerHTML = ""
-
-            let andar = 1 // Contador de andares da pirâmide
-            let simbolos = 1 // Quantos símbolos vai ter o primeiro andar
-            let cont = 1 // Contador de quantos símbolos foram mostrados
-
-            // Contando cada um dos andares
-            while (andar <= total) {
-                // Mostrando a quantidade de símbolos para esse andar
+            pir.innerHTML = ""        
+            let andar = 1            
+            let simbolos = 1            
+            let cont = 1            
+            while (andar <= total) {                
                 while (cont <= simbolos) {
                     pir.innerHTML += `#`
                     cont ++
-                }                
-                pir.innerHTML += "<br>" // Terminado o andar, quebrar linha
-                simbolos += 2 // Andar de baixo vai ter mais dois símbolos
-                cont = 1 // Recomeça a contagem de símbolos
-                andar ++ // Vamos mudar para o próximo andar
+                }
+                pir.innerHTML += "<br>"                
+                simbolos += 2                
+                cont = 1                
+                andar ++
             }
             return false
         }
