@@ -66,7 +66,7 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex013/" target="_blank">P05EX013 - Média de idade do grupo</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex014/" target="_blank">P05EX014 - Construindo uma pirâmide</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex015/" target="_blank">P05EX015 - Nome do mais velho e mais jovem</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex016/" target="_blank">P05EX016 - Número Primo</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex016/" target="_blank">P05EX016 - O número é primo?</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex017/" target="_blank">P05EX017 - Fatorial do número</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex018/" target="_blank">P05EX018 - Primos até 1000</a>
 * Em breve mais exercícios...
