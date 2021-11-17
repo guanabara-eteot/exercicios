@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            background-color: burlywood;
+        }
+
+        main {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Leitura de dados sem limite</h1>
+            <p>A partir de agora, vamos ler números sem um limite de quantidade. O usuário vai definir quantos dados ele quer digitar.</p>
+            <button onclick="lerdados()">Iniciar</button>
+        </section>
+        <section id="saida">
+            <h2>Resultado</h2>
+            <p id="res">O resultado vai aparecer aqui.</p>
+        </section>
+    </main>
+    <script>
+        let res = document.getElementById("res")
+
+        function lerdados() {
+            let num, continuar, soma = 0
+
+            res.innerHTML = `Os valores digitados foram `
+
+            let quant = 0
+            do {
+                num = Number(prompt(`Digite o ${quant+1}º número`))
+                soma += num
+                res.innerHTML += `${num} &#x2192; `
+                
+                quant ++
+
+                // Perguntar se vai continuar
+                continuar = confirm("Quer ler mais um número?")
+            } while (continuar == true)
+
+            // Encerramento
+            res.innerHTML += `&#x1F3C1;<br>Ao todo, você digitou ${quant} números. <br>E a soma de todos eles é igual a ${soma}.`
+        }
+    </script>
+</body>
+</html>

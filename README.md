@@ -72,6 +72,7 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex018/" target="_blank">P05EX018 - Primos até 1000</a>
 
 ### Parte 06 - Estrutura de Repetição do..while
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex001/" target="_blank">P06EX001 - Lendo números sem limite</a>
 * Em breve mais exercícios...
 
 ### Parte 07 - Estrutura de Repetição for
