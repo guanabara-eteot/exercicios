@@ -75,6 +75,7 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex001/" target="_blank">P06EX001 - Lendo dados sem limite</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex002/" target="_blank">P06EX002 - Validando entrada de números</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex003/" target="_blank">P06EX003 - Validando entrada de textos</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex004/" target="_blank">P06EX004 - Salários de acordo com sexo</a>
 * Em breve mais exercícios...
 
 ### Parte 07 - Estrutura de Repetição for
@@ -85,6 +86,7 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex002/" target="_blank">P08EX002 - Sorteando um nome</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex003/" target="_blank">P08EX003 - Cadastrando vários nomes</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex004/" target="_blank">P08EX004 - Dois vetores ao mesmo tempo</a>
+* Em breve mais exercícios...
 
 ### Total até o momento
 **60** exercícios

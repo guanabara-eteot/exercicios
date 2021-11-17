@@ -42,9 +42,9 @@
         function lernum() {
             let num, valor 
             do {
-                num = prompt("Digite um número entre 0 e 10")
+                num = prompt("Digite um número entre 0 e 10").trim()
                 valor = Number(num)
-                if (num.trim() === "") {
+                if (num === "") {
                     alert("Você não pode deixar a caixa em branco")
                 } else if (isNaN(num)) {
                     alert("Você precisa digitar um número, não um texto")
