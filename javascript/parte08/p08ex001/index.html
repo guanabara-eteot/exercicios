@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+</head>
+<body>
+    <main>
+        <h1>Sorteando nomes</h1>
+        <button onclick="sorteio()">Sortear</button>
+        <p id="lista"></p>
+        <p id="vencedor">Veja o vencedor aqui</p>
+    </main>
+
+    <script>
+        var nome = new Array("Pedro", "André", "Marcos", "Maria", "Gustavo")
+        var lst = document.getElementById("lista")
+        var venc = document.getElementById("vencedor")
+        lst.innerHTML = `Os participantes são ${nome.toString()}`
+
+        function sorteio() {
+            let min = 0
+            let max = nome.length
+            let num = Math.floor(Math.random() * max + min)
+            venc.innerHTML = `Total ${max}. Posicao ${num}. O vencedor foi ${nome[num]}`
+        }
+    </script>
+</body>
+</html>

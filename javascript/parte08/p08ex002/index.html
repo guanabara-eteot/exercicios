@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+</head>
+<body>
+    <main>
+        <h1>Cadastro de Pessoas</h1>
+        <button onclick="cadastrar()">Iniciar Cadastro</button>
+        <p id="lista">A lista de pessoas vai aparecer aqui...</p>
+    </main>
+
+    <script>
+        let pessoas = new Array()
+        let lst = document.getElementById("lista")
+
+        function cadastrar() {
+            let nome = ""
+            let resp = ""
+            do {
+                nome = prompt("Informe o nome da pessoa")
+                pessoas.push(nome)
+                resp = confirm("Quer continuar?")
+            } while (resp == true)
+            lst.innerHTML = `As pessoas cadastradas foram: ${pessoas.toString()}`
+        }
+    </script>
+</body>
+</html>
