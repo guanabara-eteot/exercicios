@@ -70,6 +70,11 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex016/" target="_blank">P05EX016 - O número é primo?</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex017/" target="_blank">P05EX017 - Fatorial do número</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex018/" target="_blank">P05EX018 - Primos até 1000</a>
+
+### Parte 06 - Estrutura de Repetição do..while
+* Em breve mais exercícios...
+
+### Parte 07 - Estrutura de Repetição for
 * Em breve mais exercícios...
 
 ### Parte 08 - Vetor (Array)
@@ -77,5 +82,6 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex002/" target="_blank">P08EX002 - Sorteando um nome</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex003/" target="_blank">P08EX003 - Cadastrando vários nomes</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex004/" target="_blank">P08EX004 - Dois vetores ao mesmo tempo</a>
+
 ### Total até o momento
 **60** exercícios
