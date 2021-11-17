@@ -21,6 +21,7 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte01/p01ex016/" target="_blank">P01EX016 - Aumentando os Salários</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte01/p01ex017/" target="_blank">P01EX017 - Pare de Fumar!</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte01/p01ex018/" target="_blank">P01EX018 - Sorteador de números</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte01/p01ex019/" target="_blank">P01EX019 - Cálculo de Estacionamento</a>
 
 ### Parte 02 - Estrutura Condicional if (básico)
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex001/" target="_blank">P02EX001 - Vota ou não vota?</a>
