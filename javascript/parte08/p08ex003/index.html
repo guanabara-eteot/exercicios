@@ -4,40 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Amigos</title>
+    <title>Exercício JavaScript</title>
 </head>
 <body>
-    <h1>Cadastre seus amigos</h1>
-    <button onclick="clicou()">Clica em mim</button>
-    <p id="listagem">Listagem dos seus amigos</p>
+    <main>
+        <h1>Cadastro de Pessoas</h1>
+        <button onclick="cadastrar()">Iniciar Cadastro</button>
+        <p id="lista">A lista de pessoas vai aparecer aqui...</p>
+    </main>
 
     <script>
-        let amigos = new Array()
-        let idades = new Array()
+        let pessoas = new Array()
+        let lst = document.getElementById("lista")
 
-        let lst = document.getElementById("listagem")
-
-        function clicou() {
-            let nome
-            let idade
-            let resposta
+        function cadastrar() {
+            let nome = ""
+            let resp = ""
             do {
-                nome = prompt("Digite o nome do amigo")
-                idade = Number(prompt(`Qual é a idade de ${nome}?`))
-                
-                amigos.push(nome)
-                idades.push(idade)
-
-                resposta = confirm("Quer cadastrar mais amigos?")
-            } while(resposta == true) 
-            
-            // Apresentação dos dados na tela
-            lst.innerHTML = ""
-            let pos = 0
-            while (pos < amigos.length) {
-                lst.innerHTML += `${amigos[pos]} tem ${idades[pos]} anos de idade. <br>`
-                pos ++
-            }
+                nome = prompt("Informe o nome da pessoa")
+                pessoas.push(nome)
+                resp = confirm("Quer continuar?")
+            } while (resp == true)
+            lst.innerHTML = `As pessoas cadastradas foram: ${pessoas.toString()}`
         }
     </script>
 </body>

@@ -8,24 +8,23 @@
 </head>
 <body>
     <main>
-        <h1>Cadastro de Pessoas</h1>
-        <button onclick="cadastrar()">Iniciar Cadastro</button>
-        <p id="lista">A lista de pessoas vai aparecer aqui...</p>
+        <h1>Sorteando nomes</h1>
+        <button onclick="sorteio()">Sortear</button>
+        <p id="lista"></p>
+        <p id="vencedor">Veja o vencedor aqui</p>
     </main>
 
     <script>
-        let pessoas = new Array()
-        let lst = document.getElementById("lista")
+        var nome = new Array("Pedro", "André", "Marcos", "Maria", "Gustavo")
+        var lst = document.getElementById("lista")
+        var venc = document.getElementById("vencedor")
+        lst.innerHTML = `Os participantes são ${nome.toString()}`
 
-        function cadastrar() {
-            let nome = ""
-            let resp = ""
-            do {
-                nome = prompt("Informe o nome da pessoa")
-                pessoas.push(nome)
-                resp = confirm("Quer continuar?")
-            } while (resp == true)
-            lst.innerHTML = `As pessoas cadastradas foram: ${pessoas.toString()}`
+        function sorteio() {
+            let min = 0
+            let max = nome.length
+            let num = Math.floor(Math.random() * max + min)
+            venc.innerHTML = `Total ${max}. Posicao ${num}. O vencedor foi ${nome[num]}`
         }
     </script>
 </body>

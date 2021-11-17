@@ -72,8 +72,9 @@
 * Em breve mais exercícios...
 
 ### Parte 08 - Vetor (Array)
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex001/" target="_blank">P08EX001 - Sorteando um nome</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex002/" target="_blank">P08EX002 - Cadastrando vários nomes</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex003/" target="_blank">P08EX003 - Dois vetores ao mesmo tempo</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex001/" target="_blank">P08EX001 - Um vetor simples</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex002/" target="_blank">P08EX002 - Sorteando um nome</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex003/" target="_blank">P08EX003 - Cadastrando vários nomes</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex004/" target="_blank">P08EX004 - Dois vetores ao mesmo tempo</a>
 ### Total até o momento
 **60** exercícios

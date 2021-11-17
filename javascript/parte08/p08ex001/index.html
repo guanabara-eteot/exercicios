@@ -8,23 +8,21 @@
 </head>
 <body>
     <main>
-        <h1>Sorteando nomes</h1>
-        <button onclick="sorteio()">Sortear</button>
-        <p id="lista"></p>
-        <p id="vencedor">Veja o vencedor aqui</p>
+        <h1>Um vetor simples</h1>
+        <button onclick="vetor()">Mostrar o vetor</button>
+        <p id="mensagem"></p>
     </main>
-
     <script>
-        var nome = new Array("Pedro", "André", "Marcos", "Maria", "Gustavo")
-        var lst = document.getElementById("lista")
-        var venc = document.getElementById("vencedor")
-        lst.innerHTML = `Os participantes são ${nome.toString()}`
-
-        function sorteio() {
-            let min = 0
-            let max = nome.length
-            let num = Math.floor(Math.random() * max + min)
-            venc.innerHTML = `Total ${max}. Posicao ${num}. O vencedor foi ${nome[num]}`
+        let vet = new Array(22, 36, 84, 12, 45)
+        let msg = document.getElementById("mensagem")
+        function vetor() {
+            let tam = vet.length
+            let pos = 0
+            while (pos < tam) {
+                msg.innerHTML += `<br>Na posição ${pos}, temos o valor ${vet[pos]}`
+                pos ++
+            }
+            msg.innerHTML += `<br>O vetor tem ${tam} posições ao todo.`
         }
     </script>
 </body>
