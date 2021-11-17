@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            background-color: yellowgreen;
+        }
+
+        main {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Leitura de número válido</h1>
+            <p>O número só será aceito se estiver entre 0 e 10. Experimente deixar a caixa vazia, digitar letras ou um número fora do limite.</p>
+            <button onclick="lernum()">Iniciar</button>
+        </section>
+        <section id="saida">
+            <h2>Resultado</h2>
+            <p id="res">O resultado vai aparecer aqui.</p>
+        </section>
+    </main>
+    <script>
+        let res = document.getElementById("res")
+        function lernum() {
+            let num, valor 
+            do {
+                num = prompt("Digite um número entre 0 e 10")
+                valor = Number(num)
+                if (num.trim() === "") {
+                    alert("Você não pode deixar a caixa em branco")
+                } else if (isNaN(num)) {
+                    alert("Você precisa digitar um número, não um texto")
+                } else if (valor < 0 || valor > 10) {
+                    alert("O número precisa estar entre 0 e 10")
+                } else if (valor >= 0 && valor <= 10) {
+                    // Deu certo, seguiu as regras
+                    break
+                }
+            } while (true) // Looping infinito, só um break pode quebrar a repetição
+            res.innerHTML = `O valor ${valor} foi registrado com sucesso.`
+        }
+    </script>
+</body>
+</html>

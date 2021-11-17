@@ -73,6 +73,7 @@
 
 ### Parte 06 - Estrutura de Repetição do..while
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex001/" target="_blank">P06EX001 - Lendo números sem limite</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex002/" target="_blank">P06EX002 - Lendo só número válido</a>
 * Em breve mais exercícios...
 
 ### Parte 07 - Estrutura de Repetição for
