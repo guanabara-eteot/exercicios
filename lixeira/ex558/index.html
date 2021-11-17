@@ -22,8 +22,15 @@
         </section>
     </main>
     <script>
+        let res = document.getElementById("result")
         function fatorial() {
-            alert("Até aqui, tudo funcionando!")
+            let num = Number(document.getElementById("num").value)
+            res.innerHTML = ""
+            let cont = num
+            while (cont >= 1) {
+                res.innerHTML += `${cont} `
+                cont--
+            }   
             return false
         }
     </script>
