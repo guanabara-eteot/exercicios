@@ -26,9 +26,11 @@
         function fatorial() {
             let num = Number(document.getElementById("num").value)
             res.innerHTML = ""
+            let fat = 1
             let cont = num
             while (cont >= 1) {
                 res.innerHTML += `${cont} `
+                fat *= cont // Mesma coisa que fat = fat * cont
                 if (cont == 1) {
                     res.innerHTML += "= "
                 } else {
@@ -36,6 +38,7 @@
                 }
                 cont--
             }   
+            res.innerHTML += `${fat}`
             return false
         }
     </script>
