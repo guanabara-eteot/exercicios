@@ -71,5 +71,9 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex018/" target="_blank">P05EX018 - Primos até 1000</a>
 * Em breve mais exercícios...
 
+### Parte 08 - Vetor (Array)
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p08ex001/" target="_blank">P08EX001 - Sorteando um nome</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p08ex002/" target="_blank">P08EX002 - Cadastrando vários nomes</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p08ex003/" target="_blank">P08EX003 - Dois vetores ao mesmo tempo</a>
 ### Total até o momento
-**57** exercícios
+**60** exercícios
