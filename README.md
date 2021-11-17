@@ -76,6 +76,7 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex002/" target="_blank">P06EX002 - Validando entrada de números</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex003/" target="_blank">P06EX003 - Validando entrada de textos</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex004/" target="_blank">P06EX004 - Salários de acordo com sexo</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex005/" target="_blank">P06EX005 - Nome do mais velho e mais jovem</a>
 * Em breve mais exercícios...
 
 ### Parte 07 - Estrutura de Repetição for
@@ -89,4 +90,4 @@
 * Em breve mais exercícios...
 
 ### Total até o momento
-**66** exercícios
+**67** exercícios

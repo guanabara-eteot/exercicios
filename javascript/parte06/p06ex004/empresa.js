@@ -34,7 +34,8 @@ function cadastrar() {
                 break
             }
         }
-
+        quant ++
+        
         // Totalizando de acordo com o sexo
         if (sexo == "M") {
             totM ++
@@ -44,7 +45,6 @@ function cadastrar() {
             somasalF += salnum
         }
         
-        quant ++
         continua = confirm("Cadastrar mais um funcionário?")
     } while (continua == true)
 
