@@ -51,7 +51,6 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte04/p04ex001/" target="_blank">P04EX001 - Horário da Escola</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte04/p04ex002/" target="_blank">P04EX002 - Estação do Ano</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte04/p04ex003/" target="_blank">P04EX003 - As quatro operações</a>
-* Em breve mais exercícios...
 
 ### Parte 05 - Estrutura de Repetição while
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p05ex001/" target="_blank">P05EX001 - Contando de 1 até 10</a>
@@ -79,7 +78,6 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex003/" target="_blank">P06EX003 - Validando entrada de textos</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex004/" target="_blank">P06EX004 - Salários de acordo com sexo</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte06/p06ex005/" target="_blank">P06EX005 - Nome do mais velho e mais jovem (com validação)</a>
-* Em breve mais exercícios...
 
 ### Parte 07 - Estrutura de Repetição for
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte07/p07ex001/" target="_blank">P07EX001 - Contando de 1 até 10 (com for)</a>
