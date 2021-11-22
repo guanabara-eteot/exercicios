@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamento de Carros</title>
+    <link rel="stylesheet" href="stylecarro.css">
+</head>
+<body>
+    <main>
+        <h1>Financiamento de Carros</h1>
+        <p>Compre seu carro novo com parcelas que cabem no seu bolso!</p>
+        <p>Cadastre as informações de seu carro:</p>
+        <form action="salvar.php" method="get" onsubmit="return financiar()">
+           Modelo: <input type="text" name="modelo" id="modelo" maxlength="10" placeholder="Jeep"> <br>
+           Preço Total: <input type="number" name="preco" id="preco" value="50000" step="500"> <br>
+           Quantidade de Parcelas: <input type="number" name="parcelas" id="parcelas" min="1" max="36" value="16"> <br>
+           <input type="submit" value="Financie já!">
+        </form>
+        <p id="resultado"> O resultado de seu financiamento aparecerá aqui...</p>
+    </main>
+    <script>
+        let res = document.getElementById("resultado")
+        
+        
+        
+        function financiar(){
+            let preco = Number(document.getElementById("preco").value)
+            let modelo = document.getElementById("modelo").value
+            let parcelas = Number(document.getElementById("parcelas").value)
+
+            alert(modelo)
+                
+            let porc=0
+        
+            if (parcelas<=4){ 
+                porc=0
+            } else if(parcelas<=12){
+                porc=25
+            } else if(parcelas<=24){
+                porc=60
+            } else {
+                porc=80
+            }
+
+            let aum = preco * porc / 100
+            let total = preco + aum
+            let mensal = total / parcelas
+
+            res.innerHTML = `O veículo ${modelo} custa originalmente R$${preco.toFixed(2)}. Sua opção foi parcelar em ${parcelas}x e por isso vai ter ${porc}% de juros. `
+
+            res.innerHTML += `<br><br>Sendo assim, o valor final do carro vai aumentar em R$${aum.toFixed(2)} e vai passar a custar um total de R$${total.toFixed(2)}, parcelado em ${parcelas}x de R$${mensal.toFixed(2)}.`
+            
+            return false
+        }
+    </script>
+</body>
+</html>
