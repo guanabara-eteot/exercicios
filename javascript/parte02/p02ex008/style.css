@@ -1,8 +1,7 @@
-@charset "UTF-8";
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: palevioletred;
+    background-color: darkgreen;
+    background-image: linear-gradient(to right, darkgreen, yellow);
 }
 
 main {
@@ -15,4 +14,19 @@ section {
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+span.sim {
+    color: green;
+    font-weight: bolder;
+}
+
+span.nao {
+    color: red;
+    font-weight: bolder;
 }

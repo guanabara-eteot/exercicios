@@ -7,35 +7,19 @@
     <title>Exercício JavaScript</title>
 </head>
 <body>
-    <main>
-        <h1>Quem pode votar no Brasil?</h1>
-        <p>No Brasil, o cidadão tem direito a voto se tem 16 anos ou mais (opcional ou obrigatório, dependendo da faixa etária).</p>
+    <h1>Pedindo confirmação</h1>
+    <button onclick="confirma()">Confirma ou não?</button>
 
-        <form action="salvar.php" method="get" onsubmit="return votar()">
-            <label for="ano">Em que ano você nasceu?</label>
-            <input type="number" name="ano" id="ano" min="1900" max="2021" value="2000">
-            <input type="submit" value="Verificar">
-        </form>
-
-        <p id="resposta">Será que você tem direito a voto?</p>
-    </main>
     <script>
-        let resp = document.getElementById("resposta")
+        function confirma() {
+            let resp = window.confirm("Olá! Você quer confirmar ou cancelar esta ação?")
 
-        function votar() {
-            let calend = new Date()
-            let hoje = calend.getFullYear()
-            let ano = Number(document.getElementById("ano").value)
-            let idade = hoje - ano
-
-            resp.innerHTML = `Quem nasceu em ${ano} fará <strong>${idade} anos em ${hoje}</strong>.`
-            
-            if (idade >= 16) {
-                resp.innerHTML += `Com essa idade, o cidadão <strong>TEM DIREITO A VOTO</strong>!`
+            if (resp == true) { 
+                // Se quiser, também pode ser apenas if (resp), pois o true já estará implícito
+                window.alert("Você acabou de confirmar a ação! Obrigado!")
             } else {
-                resp.innerHTML += `Com essa idade, o cidadão <strong>AINDA NÃO PODE VOTAR</strong>!`
+                window.alert("Ação cancelada com sucesso! Obrigado!")
             }
-            return false
         }
     </script>
 </body>

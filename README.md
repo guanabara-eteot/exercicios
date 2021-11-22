@@ -24,14 +24,15 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte01/p01ex019/" target="_blank">P01EX019 - Cálculo de Estacionamento</a>
 
 ### Parte 02 - Estrutura Condicional if (básico)
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex001/" target="_blank">P02EX001 - Vota ou não vota?</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex002/" target="_blank">P02EX002 - Par ou Ímpar?</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex003/" target="_blank">P02EX003 - Site personalizado</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex004/" target="_blank">P02EX004 - Radar de Velocidade</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex005/" target="_blank">P02EX005 - O número é divisível?</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex006/" target="_blank">P02EX006 - Ano Bissexto</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex007/" target="_blank">P02EX007 - Bolsa Família</a>
-* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex008/" target="_blank">P02EX008 - Desconto Dia das Mulheres</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex001/" target="_blank">P02EX001 - Confirmado ou Cancelado?</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex002/" target="_blank">P02EX002 - Vota ou não vota?</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex003/" target="_blank">P02EX003 - Par ou Ímpar?</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex004/" target="_blank">P02EX004 - Site personalizado</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex005/" target="_blank">P02EX005 - Radar de Velocidade</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex006/" target="_blank">P02EX006 - O número é divisível?</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex007/" target="_blank">P02EX007 - Ano Bissexto</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex008/" target="_blank">P02EX008 - Bolsa Família</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte02/p02ex009/" target="_blank">P02EX009 - Desconto Dia das Mulheres</a>
 
 ### Parte 03 - Estrutura Condicional if (múltipla)
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte03/p03ex001/" target="_blank">P03EX001 - Maior, menor ou igual?</a>

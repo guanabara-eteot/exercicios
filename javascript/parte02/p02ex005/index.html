@@ -5,48 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <section id="entrada">
-            <h1>É divisível?</h1>
-            <form action="salvar.php" method="get" onsubmit="return divisivel()">
-                Será que o número
-                <input type="number" name="n1" id="n1" min="0" max="100" value="1">
-                é divisivel por
-                <input type="number" name="n2" id="n2" min="0" max="100" value="1">?
-                <br><input type="submit" value="Verificar">
+            <h1>Radar de Velocidade &#x1F6B8;</h1>
+            <p>O radar identifica veículos que ultrapassam o limite de 50Km/h de velocidade na via local. Informe a velocidade do veículo.</p>
+            <form action="salvar.php" method="get" onsubmit="return radar()">
+                <label for="vel">Velocidade: </label>
+                <input type="number" name="vel" id="vel" min="1" max="240" step="0.5" value="20"> Km/h
+
+                <input type="submit" value="Verificar">
             </form>
         </section>
         <section id="saida">
-            <h2>Resultado</h2>
-            <p id="frase">Resultado</p>
+            <h2>Analisando velocidade</h2>
+            <p id="frase">Resultado...</p>
+            <img src="imagens/sem-multa.jpg" alt="Status" id="foto">
+            <br><button onclick="fechar()">Fechar</button>
         </section>
     </main>
-    <script>
-        let saida = document.getElementById("saida")
-        let frase = document.getElementById("frase")
-        saida.style.visibility = "hidden"
-
-        function divisivel() {
-            let n1 = Number(document.getElementById("n1").value)
-            let n2 = Number(document.getElementById("n2").value)
-
-            let divisao = Math.floor(n1 / n2) 
-            // Com o Math.floor, vai acontecer um arredondamento para baixo (só a parte inteira da divisão)
-            let resto = n1 % n2
-
-            if (resto == 0) {
-                frase.innerHTML = `O número ${n1} <strong>é divisível</strong> por ${n2}`
-            } else {
-                frase.innerHTML = `O número ${n1} <strong>NÃO É divisível</strong> por ${n2}`
-            }
-            frase.innerHTML += `, já que ${n1} ÷ ${n2} = ${divisao} e com <strong>resto ${resto}</strong>.`
-
-            saida.style.visibility = "visible"
-
-            return false
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -8,30 +8,33 @@
 </head>
 <body>
     <main>
-        <h1>É par ou ímpar?</h1>
-        <p>Todo número par é divisível por 2 (resto 0), lembre-se disso.</p>
+        <h1>Quem pode votar no Brasil?</h1>
+        <p>No Brasil, o cidadão tem direito a voto se tem 16 anos ou mais (opcional ou obrigatório, dependendo da faixa etária).</p>
 
-        <form action="salvar.php" method="get" onsubmit="return parouimpar()">
-            <label for="num">Digite um número </label>
-            <input type="number" name="num" id="num" min="1" max="1000000" value="1">
+        <form action="salvar.php" method="get" onsubmit="return votar()">
+            <label for="ano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="ano" min="1900" max="2021" value="2000">
             <input type="submit" value="Verificar">
         </form>
 
-        <p id="resposta">O número é par ou ímpar?</p>
+        <p id="resposta">Será que você tem direito a voto?</p>
     </main>
     <script>
         let resp = document.getElementById("resposta")
 
-        function parouimpar() {            
-            let num = Number(document.getElementById("num").value)
+        function votar() {
+            let calend = new Date()
+            let hoje = calend.getFullYear()
+            let ano = Number(document.getElementById("ano").value)
+            let idade = hoje - ano
 
-            resp.innerHTML = `O número ${num} que foi digitado `
-            if (num % 2 == 0) {
-                resp.innerHTML += `É PAR!`
-            } else {
-                resp.innerHTML += `É ÍMPAR!`
-            }
+            resp.innerHTML = `Quem nasceu em ${ano} fará <strong>${idade} anos em ${hoje}</strong>.`
             
+            if (idade >= 16) {
+                resp.innerHTML += `Com essa idade, o cidadão <strong>TEM DIREITO A VOTO</strong>!`
+            } else {
+                resp.innerHTML += `Com essa idade, o cidadão <strong>AINDA NÃO PODE VOTAR</strong>!`
+            }
             return false
         }
     </script>
