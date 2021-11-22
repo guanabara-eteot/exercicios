@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>As operações</h1>
+            <p>Informe dois números e escolha qual das quatro operações aritméticas vai ser executada com eles.</p>
+            <form action="salvar.php" method="get" onsubmit="return calc()">
+
+                <label for="v1">Valor 1 </label>
+                <input type="number" name="v1" id="v1" min="0" max="10" value="0">
+
+                <br><label for="v2">Valor 2 </label>
+                <input type="number" name="v2" id="v2" min="0" max="10" value="0">
+
+                <br>Operações disponíveis:
+                <ol>
+                    <li>Adição</li>
+                    <li>Subtração</li>
+                    <li>Multiplicação</li>
+                    <li>Divisão</li>
+                </ol>
+                <br><label for="opc">Qual é a operação? </label>
+                <input type="number" name="opc" id="opc" min="1" max="4" value="1">
+
+                <br><input type="submit" value="Calcular">
+            </form>
+        </section>
+        <section id="saida">
+            <h2 id="titulo">Resultado</h2>
+            <p id="frase">A resposta vai aparecer aqui</p>
+            <button onclick="fechar()">Fechar</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
