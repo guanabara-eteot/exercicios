@@ -92,4 +92,4 @@
 * Em breve mais exercícios...
 
 ### Total até o momento
-**69** exercícios completos
+**71** exercícios completos
