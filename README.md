@@ -82,6 +82,7 @@
 * Em breve mais exercícios...
 
 ### Parte 07 - Estrutura de Repetição for
+* <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte05/p07ex001/" target="_blank">P07EX001 - Contando de 1 até 10 (com for)</a>
 * Em breve mais exercícios...
 
 ### Parte 08 - Vetor (Array)

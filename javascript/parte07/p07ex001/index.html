@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+</head>
+<body>
+    <h1>Contando de 1 até 10</h1>
+    <p>Aperte o botão a seguir e o computador vai mostrar uma contagem que vai de 1 até 10.</p>
+    <button onclick="contar()">Aperte aqui</button>
+    <p id="numeros">A contagem vai aparecer aqui...</p>
+    <script>
+        function contar() {
+            let num = document.getElementById("numeros")
+            num.innerHTML = ``
+
+            // Contando de 1 até 10 usando o for
+            // A estrutura for unifica a inicialização, o teste lógico e o incremento em uma única linha. Facilita bastante nos casos em que existem esses três elementos no laço.
+            for (let n = 1; n <= 10; n++) {
+                num.innerHTML += `${n} &#x2192; `
+            }
+            num.innerHTML += `FIM` 
+            
+            /** COMPARE COMO SERIA USANDO O WHILE
+            let n = 1
+            while (n <= 10) {
+                num.innerHTML += `${n} &#x2192; `
+                n = n + 1 // Também serve usar a expressão n += 1 ou n ++
+            }
+            num.innerHTML += `FIM` 
+            */
+            
+        }
+    </script>
+</body>
+</html>
