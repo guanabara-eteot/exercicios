@@ -1,0 +1,17 @@
+body {
+    background-color: indigo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}

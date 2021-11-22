@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Progressão Aritmética Crescente</h1>
+            <form action="progressao.php" method="get" onsubmit="return pa()">
+                <label for="a1">Primeiro termo (a1) </label>
+                <input type="number" name="a1" id="a1" min="1" max="10000" value="1">
+                <br><label for="q">Quantidade de elementos </label>
+                <input type="number" name="q" id="q" min="1" max="10000" value="10">
+                <br><label for="r">Razão (q) </label>
+                <input type="number" name="r" id="r" min="1" max="1000" value="1">
+                <br><input type="submit" value="Mostrar PA">
+            </form>
+        </section>
+        <section>
+            <h2>Mostrando a P.A.</h2>
+            <p id="seq">A sequência vai aparecer aqui...</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
