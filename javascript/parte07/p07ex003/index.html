@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Sequência de Fibonacci</h1>
+            <img src="fibonacci.png" alt="Fibonacci">
+            <p>Na matemática, a sequência de Fibonacci é uma sequência de números inteiros, começando normalmente por 0 e 1, na qual cada termo subsequente corresponde à soma dos dois anteriores. A sequência recebeu o nome do matemático italiano Leonardo de Pisa, mais conhecido por Fibonacci, que descreveu, no ano de 1202, o crescimento de uma população de coelhos, a partir desta. <a href="https://pt.wikipedia.org/wiki/Sequência_de_Fibonacci" target="_blank">Saiba mais sobre a sequência de Fibonacci</a></p>
+            
+            <form action="fibonacci.php" method="get" onsubmit="return fibonacci()">
+                <label for="quant">Mostrar quantos termos?</label>
+                <input type="number" name="quant" id="quant" min="2" max="100" value="10">
+                <input type="submit" value="Fibonacci">
+            </form>
+        </section>
+        <section>
+            <h2>Sequência solicitada</h2>
+            <p id="seq">A sequência de Fibonacci vai aparecer aqui...</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
