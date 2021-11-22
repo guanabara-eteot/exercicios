@@ -15,4 +15,6 @@ function fibonacci() {
         t2 = aux
     }
     seq.innerHTML += `FIM`
+
+    return false
 }

@@ -12,4 +12,6 @@ function pa() {
         elemento += r
     }
     seq.innerHTML += `<hr>Fim da P.A.`
+
+    return false
 }
