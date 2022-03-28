@@ -1,6 +1,14 @@
 # Exercicios Completos
  Exercícios Resolvidos Completos
 
+## Exercícios HTML5 e CSS3
+### Parte 01 - Estrutura básica HTML5
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex001/" target="_blank">P01EX001 - Primeiro site</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex002/" target="_blank">P01EX002 - Parágrafos e quebras de linha</a>
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex003/" target="_blank">P01EX003 - Símbolos de texto</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex004/" target="_blank">P01EX004 - Inserindo emojis &#x1F618;</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex005/" target="_blank">P01EX005 - Favicon de uma página</a>  
+
 ## Exercícios JavaScript
 ### Parte 01 - Estrutura Sequencial
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte01/p01ex001/" target="_blank">P01EX001 - Usando o alert()</a>
