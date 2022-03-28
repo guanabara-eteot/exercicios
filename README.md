@@ -8,7 +8,8 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex003/" target="_blank">P01EX003 - Símbolos de texto</a> 
 * <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex004/" target="_blank">P01EX004 - Inserindo emojis &#x1F618;</a> 
 * <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex005/" target="_blank">P01EX005 - Favicon de uma página</a>  
-
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex006/" target="_blank">P01EX006 - Inserindo uma imagem</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex007/" target="_blank">P01EX007 - Diferença entre formatos JPEG e PNG</a>  
 ## Exercícios JavaScript
 ### Parte 01 - Estrutura Sequencial
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte01/p01ex001/" target="_blank">P01EX001 - Usando o alert()</a>
@@ -99,6 +100,3 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex003/" target="_blank">P08EX003 - Cadastrando vários nomes</a>
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte08/p08ex004/" target="_blank">P08EX004 - Dois vetores ao mesmo tempo</a>
 * Em breve mais exercícios...
-
-### Total até o momento
-**72** exercícios completos
