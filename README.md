@@ -10,6 +10,7 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex005/" target="_blank">P01EX005 - Favicon de uma página</a>  
 * <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex006/" target="_blank">P01EX006 - Inserindo uma imagem</a> 
 * <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex007/" target="_blank">P01EX007 - Diferença entre formatos JPEG e PNG</a>  
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex008/" target="_blank">P01EX008 - Hierarquia de títulos</a>  
 ## Exercícios JavaScript
 ### Parte 01 - Estrutura Sequencial
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte01/p01ex001/" target="_blank">P01EX001 - Usando o alert()</a>
