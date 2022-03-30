@@ -10,7 +10,14 @@
 * <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex005/" target="_blank">P01EX005 - Favicon de uma página</a>  
 * <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex006/" target="_blank">P01EX006 - Inserindo uma imagem</a> 
 * <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex007/" target="_blank">P01EX007 - Diferença entre formatos JPEG e PNG</a>  
-* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex008/" target="_blank">P01EX008 - Hierarquia de títulos</a>  
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex008/" target="_blank">P01EX008 - Hierarquia de títulos</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex009/" target="_blank">P01EX009 - Formatação de Textos (parte 1)</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex010/" target="_blank">P01EX010 - Formatação de Textos (parte 2)</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex011/" target="_blank">P01EX011 - Listas Ordenadas</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex012/" target="_blank">P01EX012 - Listas não Ordenadas</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex013/" target="_blank">P01EX013 - Listas Mistas</a> 
+* <a href="https://guanabara-eteot.github.io/exercicios/html-css/parte01/p01ex014/" target="_blank">P01EX014 - Listas de Definição</a>  
+
 ## Exercícios JavaScript
 ### Parte 01 - Estrutura Sequencial
 * <a href="https://guanabara-eteot.github.io/exercicios/javascript/parte01/p01ex001/" target="_blank">P01EX001 - Usando o alert()</a>

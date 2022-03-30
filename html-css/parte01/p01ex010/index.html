@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos - Parte 2</title>
+</head>
+<body>
+    <main>
+        <h1>Formatação de Textos (Parte 2)</h1>
+        <hr>
+        <p>Vamos continuar a aprender alguns tipos de formatação de textos.</p>
+        
+        <h2>Trechos de código</h2>
+        <p>Se precisarmos escrever trechos de código em nosso site, como um código-fonte em JavaScript, podemos usar a tag CODE para isso. Se juntarmos a ela a tag PRE, o texto já vem previamente formatado.</p>
+        <pre>
+            <code>
+    // Código JS para calcular o dobro de um número
+    let n = Number(window.prompt("Digite um número:"))
+    let d = n * 2
+    window.alert(`O dobro de ${n} é igual a ${d}`)
+            </code>
+        </pre>
+
+        <h2>Citações e abreviações</h2>
+        <p>Outro recurso muito importante para sites são as citações. As citações curtas podem usar a tag Q e as longas usam a tag BLOCKQUOTE. Vamos ver exemplos:</p>
+        <p>Como diria minha avó: <q>Quando não tiver o que dizer, não diga nada!</q></p>
+        <p>Como disse Steve Jobs: <blockquote cite="https://www.pensador.com/frases_sobre_tecnologia/">Nascemos, vivemos por um momento breve e morremos. Tem sido assim há muito tempo. A tecnologia não está mudando muito este cenário.</blockquote></p>
+        <p>Se formos usar siglas, podemos usar a tag ABBR para dar significado a elas. Por exemplo, passe o mouse sobre as siglas <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e aguarde alguns segundos.</p>
+    </main>
+</body>
+</html>
